@@ -1,0 +1,8 @@
+{
+    "home": {
+        "home.welcome": "¡Bienvenido al Panel de configuración de Cookiebot!",
+        "home.groupBotCount": "¡Actualmente estoy presente en Grupos XXX!",
+        "home.inviteMeText": "Agrega el bot a tu grupo haciendo clic en'¡Invítame!'\nO si necesita configurar algo en el bot de su grupo, elija el botón correspondiente a continuación. Si tiene alguna pregunta o comentario, comuníquese con @MekhyW.",
+        "home.inviteMeButton": "¡Invitame!"
+    }
+}
