@@ -1,10 +1,8 @@
-import { MainButton, useShowPopup, useWebApp } from '@vkruglikov/react-telegram-web-app';
+import { MainButton, useShowPopup} from '@vkruglikov/react-telegram-web-app';
 
 
 export const App = () => {
   const showPopup = useShowPopup();
-
-  const webApp = useWebApp();
 
   const handleClick = () =>
     showPopup({
