@@ -1,13 +1,36 @@
-import { MainButton, useShowPopup} from '@vkruglikov/react-telegram-web-app';
+import AppRouter from './routes';
+import { WebhubContext } from './context/WebhubContext';
+
+import messages_en from "./configs/translations/en-US.json";
+import messages_ptBR from "./configs/translations/pt-BR.json";
+import messages_es from "./configs/translations/es.json";
+
+
+import { IntlProvider } from 'react-intl';
+
+const messages = {
+  'pt-BR': messages_ptBR,
+  'en': messages_en,
+  'es': messages_es
+} as any;
 
 
 export const App = () => {
-  const showPopup = useShowPopup();
 
-  const handleClick = () =>
-    showPopup({
-      message: 'Hello, I am popup',
-    });
+  const language = navigator.language;
 
-  return( <MainButton text="SHOW POPUP" onClick={handleClick} />);
+  console.log(messages[language]);
+
+  return (<>
+    <WebhubContext.Provider value={{
+      language: language,
+      groups: [],
+      userId: ""
+    }}>
+
+      <IntlProvider locale={navigator.language} defaultLocale='pt-BR' messages={messages[language]}>
+        <AppRouter />
+      </IntlProvider >
+    </WebhubContext.Provider>
+  </>);
 };

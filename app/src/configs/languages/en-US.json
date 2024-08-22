@@ -1,8 +1,0 @@
-{
-    "home":{
-        "home.welcome": "Welcome to the Set Up Panel for the Cookiebot!",
-        "home.groupBotCount": "I am Currently active in XXX Groups!",
-        "home.inviteMeText": "If you wish to add it to a group, select “Add Me” Or if you wish to configure any settings, go ahead and select the setting to be configured! Any doubts or feedback, please contact @MekhyW",
-        "home.inviteMeButton": "Add Me!"
-    }
-}
