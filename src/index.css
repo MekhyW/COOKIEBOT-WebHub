@@ -1,22 +1,57 @@
 @font-face {
   font-family: "Futura";
-  src: url("./fonts/FuturaCyrillicMedium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Futura";
-  src: url("./fonts/FuturaCyrillicLight.ttf") format("truetype");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Futura";
-  src: url("./fonts/FuturaCyrillicExtraBold.ttf") format("truetype");
+  src: url("./fonts/FUTURA55REGULAR.TTF") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/FUTURA56ITALIC.TTF") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/FUTURA65MEDIUM.TTF") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/FUTURA66MEDIUMITALIC.TTF") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/FUTURA45LIGHT.TTF") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/FUTURA46LIGHTITALIC.TTF") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/FUTURA75BOLD.TTF") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/FUTURA76BOLDITALIC.TTF") format("truetype");
+  font-weight: 700;
+  font-style: italic;
 }
 
 * {
@@ -26,8 +61,7 @@
 }
 
 body {
-  background-color: var(--grey-800);
-  color: var(--grey-100);
+  color: var(--brown-700) !important;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -38,6 +72,8 @@ textarea,
 button {
   font-family: 'Futura', sans-serif;
   font-size: 1rem;
+  color:var(--brown-700) !important;
+  
 }
 
 :root {
