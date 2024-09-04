@@ -43,8 +43,9 @@ export default function Privacy() {
             <p>Cookiebot's code is open source and available in the following repositories:</p><br/>
 
             <a href="https://github.com/MekhyW/COOKIEBOT-Telegram-Group-Bot">Cookiebot Telegram Group Bot</a><br/>
-            <a href="https://github.com/MekhyW/COOKIEBOT-backend">Cookiebot Backend</a><br/><br/>
-
+            <a href="https://github.com/MekhyW/COOKIEBOT-backend">Cookiebot Backend</a><br/>
+            <a href="https://github.com/MekhyW/COOKIEBOT-WebHub">Cookiebot WebHub</a><br/>
+            <br/>
             <p><b>Contact</b></p><br/>
             <p>If you have any questions or concerns about this privacy statement, please contact me, @mekhyw.</p><br/>
 
