@@ -1,0 +1,333 @@
+/* 7 */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+/* cookiebot bg */
+background: url(bg1.jpg);
+
+
+/* Rectangle 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 353px;
+height: 509px;
+left: 11px;
+top: 141px;
+
+background: #FFFFFF;
+border: 1px solid #FFE9C9;
+border-radius: 5px;
+
+
+/* Button
+
+Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like Dialogs, Modal windows, Forms, Cards and Toolbars
+
+Filled buttons are high-emphasis buttons.
+They have the most visual impact after the FAB, and should be used for important, final actions that complete a flow, like &quot;Save&quot;, &quot;Join now&quot;, or &quot;Confirm&quot;.
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 289px;
+height: 31px;
+left: 42px;
+top: 714px;
+
+background: #FFE9C9;
+border-radius: 100px;
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px 10px 16px;
+gap: 8px;
+
+width: 289px;
+height: 31px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* icon */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 25%;
+
+background: #3A2601;
+
+
+/* label-text */
+
+width: 89px;
+height: 20px;
+
+/* M3/label/large */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+
+color: #3A2601;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Contents */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 11px 16px 11px 0px;
+
+position: absolute;
+width: 334px;
+height: 44px;
+left: 30px;
+top: 249px;
+
+border-bottom: 0.33333px solid rgba(84, 84, 86, 0.34);
+
+
+/* Title */
+
+width: 100px;
+height: 22px;
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 300;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+display: flex;
+align-items: center;
+letter-spacing: -0.43px;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 218px;
+height: 22px;
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 300;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+display: flex;
+align-items: center;
+letter-spacing: -0.43px;
+
+color: rgba(60, 60, 67, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Row - Text Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 0px 0px 16px;
+
+position: absolute;
+width: 350px;
+height: 44px;
+left: 12px;
+top: 146px;
+
+
+
+/* Contents */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 11px 16px 11px 0px;
+
+width: 334px;
+height: 44px;
+
+border-bottom: 0.33333px solid rgba(84, 84, 86, 0.34);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Title */
+
+width: 100px;
+height: 22px;
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 300;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+display: flex;
+align-items: center;
+letter-spacing: -0.43px;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 218px;
+height: 22px;
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 300;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+display: flex;
+align-items: center;
+letter-spacing: -0.43px;
+
+color: rgba(60, 60, 67, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Contents */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 11px 16px 11px 0px;
+
+position: absolute;
+width: 334px;
+height: 44px;
+left: 29px;
+top: 197px;
+
+border-bottom: 0.33333px solid rgba(84, 84, 86, 0.34);
+
+
+/* Title */
+
+width: 100px;
+height: 22px;
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 300;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+display: flex;
+align-items: center;
+letter-spacing: -0.43px;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 218px;
+height: 22px;
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 300;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+display: flex;
+align-items: center;
+letter-spacing: -0.43px;
+
+color: rgba(60, 60, 67, 0.3);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;

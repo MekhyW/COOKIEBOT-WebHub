@@ -1,0 +1,1276 @@
+/* 3 */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+/* cookiebot bg */
+background: url(bg1.jpg);
+
+
+/* Button
+
+Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like Dialogs, Modal windows, Forms, Cards and Toolbars
+
+Filled buttons are high-emphasis buttons.
+They have the most visual impact after the FAB, and should be used for important, final actions that complete a flow, like &quot;Save&quot;, &quot;Join now&quot;, or &quot;Confirm&quot;.
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 289px;
+height: 31px;
+left: 43px;
+top: 710px;
+
+background: #FFE9C9;
+border-radius: 100px;
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px 10px 16px;
+gap: 8px;
+
+width: 289px;
+height: 31px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* icon */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 25%;
+
+background: #3A2601;
+
+
+/* label-text */
+
+width: 209px;
+height: 20px;
+
+/* M3/label/large */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+
+color: #3A2601;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text field
+
+Use a text field when someone needs to enter text into a UI, such as filling in contact or payment information.
+
+🛠 Additional options
+Support text - you can toggle supporting text between hide and show.
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+position: absolute;
+width: 351px;
+height: 84px;
+left: 12px;
+top: 131px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 4px 4px 0px 0px;
+
+
+/* text field */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 351px;
+height: 84px;
+
+border: 1px solid #FEF7FF;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+z-index: 0;
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px 4px 16px;
+
+width: 351px;
+height: 84px;
+
+border-radius: 4px 4px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 0px;
+isolation: isolate;
+
+width: 335px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* placeholder-text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 315px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* placeholder-text */
+
+width: 315px;
+height: 72px;
+
+/* M3/body/large */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.5px;
+
+color: #AA7208;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* label-text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 4px;
+
+position: absolute;
+width: 116px;
+height: 16px;
+left: -4px;
+top: -12px;
+
+background: #FFE9C9;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* label-text */
+
+width: 108px;
+height: 16px;
+
+/* M3/body/small
+
+0.4
+*/
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+letter-spacing: 0.4px;
+
+color: #5E410D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* supporting-text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 16px 0px;
+gap: 10px;
+
+position: absolute;
+display: none;
+height: 20px;
+left: 0px;
+right: 0px;
+bottom: -20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Text field
+
+Use a text field when someone needs to enter text into a UI, such as filling in contact or payment information.
+
+🛠 Additional options
+Support text - you can toggle supporting text between hide and show.
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+position: absolute;
+width: 351px;
+height: 84px;
+left: 12px;
+top: 263px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 4px 4px 0px 0px;
+
+
+/* text field */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 351px;
+height: 84px;
+
+border: 1px solid #FEF7FF;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+z-index: 0;
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px 4px 16px;
+
+width: 351px;
+height: 84px;
+
+border-radius: 4px 4px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 0px;
+isolation: isolate;
+
+width: 335px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* placeholder-text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 327px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* placeholder-text */
+
+width: 327px;
+height: 72px;
+
+/* M3/body/large */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.5px;
+
+color: #AA7208;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* label-text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 4px;
+
+position: absolute;
+width: 69px;
+height: 16px;
+left: -4px;
+top: -12px;
+
+background: #FFE9C9;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* label-text */
+
+width: 61px;
+height: 16px;
+
+/* M3/body/small
+
+0.4
+*/
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+letter-spacing: 0.4px;
+
+color: #5E410D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* supporting-text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 16px 0px;
+gap: 10px;
+
+position: absolute;
+display: none;
+height: 20px;
+left: 0px;
+right: 0px;
+bottom: -20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Seperator */
+
+position: absolute;
+width: 359px;
+height: 1px;
+left: 8px;
+top: 370px;
+
+background: #FFFFFF;
+border: 0.33px solid #FFFFFF;
+
+
+/* Seperator */
+
+position: absolute;
+width: 359px;
+height: 1px;
+left: 8px;
+top: 238px;
+
+background: #FFFFFF;
+border: 0.33px solid #FFFFFF;
+
+
+/* Row */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 0px;
+top: 400px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Notifications */
+
+position: absolute;
+height: 22px;
+left: 4%;
+right: 14.4%;
+top: calc(50% - 22px/2);
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+letter-spacing: -0.4px;
+
+color: #000000;
+
+
+
+/* Checkboxes
+
+Checkboxes are a selection control which allow users to select one or more options from a set; present a list containing sub-selections; and turn an item on or off in a desktop environment
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px;
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 327px;
+top: -2px;
+
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 11px;
+isolation: isolate;
+
+width: 40px;
+height: 40px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* container */
+
+width: 18px;
+height: 18px;
+
+background: #FFE9C9;
+border-radius: 2px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* check_small */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: calc(50% - 24px/2);
+top: calc(50% - 24px/2);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* icon */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 29.17%;
+bottom: 31.67%;
+
+background: #5E410D;
+
+
+/* Row */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 0px;
+top: 462px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Notifications */
+
+position: absolute;
+height: 22px;
+left: 4.27%;
+right: 37.33%;
+top: calc(50% - 22px/2 - 1px);
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+letter-spacing: -0.4px;
+
+color: #000000;
+
+
+
+/* Checkboxes
+
+Checkboxes are a selection control which allow users to select one or more options from a set; present a list containing sub-selections; and turn an item on or off in a desktop environment
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px;
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 327px;
+top: -2px;
+
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 11px;
+isolation: isolate;
+
+width: 40px;
+height: 40px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* container */
+
+width: 18px;
+height: 18px;
+
+background: #FFE9C9;
+border-radius: 2px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* check_small */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: calc(50% - 24px/2);
+top: calc(50% - 24px/2);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* icon */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 29.17%;
+bottom: 31.67%;
+
+background: #5E410D;
+
+
+/* Row */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 0px;
+top: 524px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Notifications */
+
+position: absolute;
+height: 22px;
+left: 4.27%;
+right: 53.6%;
+top: calc(50% - 22px/2 - 1px);
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+letter-spacing: -0.4px;
+
+color: #000000;
+
+
+
+/* Checkboxes
+
+Checkboxes are a selection control which allow users to select one or more options from a set; present a list containing sub-selections; and turn an item on or off in a desktop environment
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px;
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 327px;
+top: -2px;
+
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 11px;
+
+display: none;
+width: 40px;
+height: 40px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Switch
+
+Switches are the preferred way to adjust settings. They&#39;re used to control binary options – think On/Off or True/False.
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 2px 4px;
+
+position: absolute;
+width: 52px;
+height: 32px;
+left: 319px;
+top: 6px;
+
+background: #5E410D;
+border-radius: 100px;
+
+
+/* Handle */
+
+width: 44px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Target */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px;
+
+position: absolute;
+width: 48px;
+height: 48px;
+right: -12px;
+top: calc(50% - 48px/2);
+
+
+
+/* State-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 40px;
+height: 40px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Handle shape */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 11px;
+
+width: 24px;
+height: 24px;
+
+background: #FFFFFF;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+width: 2px;
+height: 2px;
+
+border-radius: 23px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Row */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 0px;
+top: 586px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Notifications */
+
+position: absolute;
+height: 22px;
+left: 4.27%;
+right: 67.47%;
+top: calc(50% - 22px/2 - 1px);
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+letter-spacing: -0.4px;
+
+color: #000000;
+
+
+
+/* Checkboxes
+
+Checkboxes are a selection control which allow users to select one or more options from a set; present a list containing sub-selections; and turn an item on or off in a desktop environment
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px;
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 327px;
+top: -2px;
+
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 11px;
+
+display: none;
+width: 40px;
+height: 40px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button
+
+Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like Dialogs, Modal windows, Forms, Cards and Toolbars
+
+Filled buttons are high-emphasis buttons.
+They have the most visual impact after the FAB, and should be used for important, final actions that complete a flow, like &quot;Save&quot;, &quot;Join now&quot;, or &quot;Confirm&quot;.
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 289px;
+height: 31px;
+left: -445px;
+top: 1626px;
+
+background: #FFE9C9;
+border-radius: 100px;
+
+
+/* state-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px 10px 16px;
+gap: 8px;
+
+width: 289px;
+height: 31px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* icon */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 25%;
+
+background: #3A2601;
+
+
+/* label-text */
+
+width: 209px;
+height: 20px;
+
+/* M3/label/large */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+
+color: #3A2601;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Switch
+
+Switches are the preferred way to adjust settings. They&#39;re used to control binary options – think On/Off or True/False.
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 2px 4px;
+
+position: absolute;
+width: 52px;
+height: 32px;
+left: 319px;
+top: 592px;
+
+background: #5E410D;
+border-radius: 100px;
+
+
+/* Handle */
+
+width: 44px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Target */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px;
+
+position: absolute;
+width: 48px;
+height: 48px;
+right: -12px;
+top: calc(50% - 48px/2);
+
+
+
+/* State-layer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 40px;
+height: 40px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Handle shape */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 11px;
+
+width: 24px;
+height: 24px;
+
+background: #FFFFFF;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+width: 2px;
+height: 2px;
+
+border-radius: 23px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
