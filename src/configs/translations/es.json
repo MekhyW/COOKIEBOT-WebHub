@@ -2,5 +2,21 @@
     "home.welcome": "¡Bienvenido al Panel de configuración de Cookiebot!",
     "home.groupBotCount": "¡Actualmente estoy presente en Grupos XXX!",
     "home.inviteMeText": "Agrega el bot a tu grupo haciendo clic en'¡Invítame!'\nO si necesita configurar algo en el bot de su grupo, elija el botón correspondiente a continuación. Si tiene alguna pregunta o comentario, comuníquese con @MekhyW.",
-    "home.inviteMeButton": "¡Invitame!"
+    "home.inviteMeButton": "¡Invitame!",
+
+    "home.menu.settings":"Configuraciones generales",
+    "home.menu.moderationtools":"Herramientas de moderación",
+    "home.menu.posts":"Entradas y publicaciones",
+    "home.menu.board":"Tablero de Publicaciones",
+    "home.menu.help":"Chat grupal de prueba y asistencia",
+
+    "moderation.captcha.title": "Tiempo de resolución de Captcha",
+    "moderation.captcha.description":"Establece el tiempo en segundos para resolver el captcha de seguridad",
+    "moderation.sticker.title": "Limitador de spam de pegatinas",
+    "moderation.sticker.description":"Configura el número de stickers en secuencia para activar la advertencia",
+    "moderation.imagetimeout.title": "Tiempo de espera de imagen",
+    "moderation.imagetimeout.description":"Establezca en minutos el tiempo de espera para que las imágenes se envíen al grupo después de unirse",
+    "moderation.allowexternalmedia.title":"Permitir medios externos (vídeos o documentos)",
+    "moderation.banlog": "Registro de usuario prohibido",
+    "moderation.resetbutton":"Restablecer la configuración actual a los valores predeterminados"
 }

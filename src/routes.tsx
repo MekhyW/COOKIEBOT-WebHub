@@ -9,6 +9,7 @@ import messages_es from "./configs/translations/es.json";
 
 import { IntlProvider } from 'react-intl';
 import { useWebhubContext } from './context/WebhubContext';
+import ModerationTools from './pages/ModerationTools';
 
 const messages = {
   'pt-BR': messages_ptBR,
@@ -28,6 +29,7 @@ export default function AppRouter() {
             <Route index element={<Home />} />
           </Route>
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/moderation-tools" element={<ModerationTools/>}/>
         </Routes>
       </BrowserRouter>
     </IntlProvider>

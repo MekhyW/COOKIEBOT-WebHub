@@ -1,0 +1,20 @@
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.25rem;
+    color: #ffffff;
+
+    border-radius: 100px;
+    text-decoration: none;
+    
+}
+
+.brown{
+    background-color: var(--brown-700) ;
+}
+
+.light-brown{
+    background-color: var(--brown-500);
+}

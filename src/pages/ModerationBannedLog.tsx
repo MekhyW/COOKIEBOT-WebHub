@@ -1,7 +1,3 @@
-import React from 'react'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-
 interface ModerationBannedLogProps {
   backgroundImage?: string;
 }
@@ -18,20 +14,20 @@ export default function ModerationBannedLog({ backgroundImage = '/bg1.jpg' }: Mo
             <div className="w-[100px] h-[22px] font-['Futura'] font-light text-[17px] leading-[22px] flex items-center tracking-[-0.43px] text-black">
               USERNAME
             </div>
-            <Input 
+            <input 
               className="w-[218px] h-[22px] font-['Futura'] font-light text-[17px] leading-[22px] flex items-center tracking-[-0.43px] text-[rgba(60,60,67,0.3)] border-b border-[rgba(84,84,86,0.34)]"
               placeholder="Type Here The Reason for Ban"
             />
           </div>
         ))}
       </div>
-      <Button 
+      <button 
         className="absolute w-[289px] h-[31px] left-[42px] top-[714px] bg-[#FFE9C9] rounded-[100px] flex flex-col justify-center items-center"
       >
         <span className="font-['Roboto'] font-medium text-[14px] leading-[20px] flex items-center text-center tracking-[0.1px] text-[#3A2601]">
           Clear Ban List
         </span>
-      </Button>
+      </button>
     </div>
   )
 }

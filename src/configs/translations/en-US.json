@@ -2,5 +2,21 @@
     "home.welcome": "Welcome to the Set Up Panel for the Cookiebot!",
     "home.groupBotCount": "I am Currently active in XXX Groups!",
     "home.inviteMeText": "If you wish to add it to a group, select “Add Me” Or if you wish to configure any settings, go ahead and select the setting to be configured! Any doubts or feedback, please contact @MekhyW",
-    "home.inviteMeButton": "Add Me!"
+    "home.inviteMeButton": "Add Me!",
+
+    "home.menu.settings":"General Settings",
+    "home.menu.moderationtools":"Moderation Tools",
+    "home.menu.posts":"Posts and Publications",
+    "home.menu.board":"Publications Board",
+    "home.menu.help":"Test and Assistance Group Chat",
+
+    "moderation.captcha.title":"Captcha Resolution Time",
+    "moderation.captcha.description":"Set the time in seconds to solve the security captcha",
+    "moderation.sticker.title":"Sticker Spam Limiter",
+    "moderation.sticker.description":"Configures the number of stickers in sequence to activate the warning",
+    "moderation.imagetimeout.title":"Image Timeout",
+    "moderation.imagetimeout.description":"Set in minutes the timeout for images to be sent to the group after joining",
+    "moderation.allowexternalmedia.title":"Allow External Media (Videos or Documents)",
+    "moderation.banlog":"Banned User's Log",
+    "moderation.resetbutton":"Reset Current Settings to Default"
 }

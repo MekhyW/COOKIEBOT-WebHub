@@ -44,6 +44,22 @@
             }
         }
 
+        &__btnAddMe{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-radius: 100px;
+            gap:0.5rem;
+            background-color: var(--brown-700);
+            cursor: pointer;
+       
+            h3{
+                font-size: 1rem;
+                color: #ffffff;
+            }
+        }
+
 
         &__avatar {
 
@@ -55,6 +71,26 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 50%;
+            }
+        }
+
+        &__menu{
+            
+            border-top: 1px solid var(--brown-700);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            padding: 1rem;
+            
+            gap: 0.5rem;
+
+            &__bottom{
+                margin-top: 4rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 0.5rem;
             }
         }
     }
