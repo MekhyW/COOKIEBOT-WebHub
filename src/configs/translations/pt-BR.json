@@ -2,5 +2,9 @@
     "home.welcome": "Boas Vindas ao Painel de Configurações do Cookiebot!",
     "home.groupBotCount": "Atualmente, Estou Presente em XXX Grupos!",
     "home.inviteMeText": "Adicione o bot em seu grupo clicando em “Me Convide!”\nOu caso precise configurar algo no bot em seu grupo,escolha o botão correspondente abaixo!Em caso de dúvida ou feedback, contate @MekhyW",
-    "home.inviteMeButton": "Me Convide!"
+    "home.inviteMeButton": "Me Convide!",
+    "general.welcome": "Mensagem de Boas Vindas",
+    "general.welcomeLabel": "Digite aqui a mensagem que aparecerá quando alguém entrar no grupo.",
+    "general.chatrules": "Regras do Chat",
+    "general.chatrulesLabel": "Digite aqui, as regras do chat que aparece ao digitar o comando /regras"
 }

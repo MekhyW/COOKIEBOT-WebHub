@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Privacy from './pages/Privacy';
+import DashHome from './pages/DashHome';
+import DashGeneral from './pages/DashGeneral';
 
 import messages_en from "./configs/translations/en-US.json";
 import messages_ptBR from "./configs/translations/pt-BR.json";
@@ -28,6 +30,8 @@ export default function AppRouter() {
             <Route index element={<Home />} />
           </Route>
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/dashboard/home" element={<DashHome />} />
+          <Route path="/dashboard/general" element={<DashGeneral />} />
         </Routes>
       </BrowserRouter>
     </IntlProvider>

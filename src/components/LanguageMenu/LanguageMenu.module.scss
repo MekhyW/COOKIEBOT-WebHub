@@ -1,12 +1,12 @@
 .language{
 
     position: absolute;
-    top:40px;
-    right: 15px;
-    width: 15.625rem;
+    top:20px;
+    right: 10px;
+    width: 10.625rem;
     border-radius: 3%;
 
-    background-color: rgba(255,255,255);
+    background-color: rgba(206, 205, 205, 0.979);
 
     &__list{
         width: 100%;
@@ -14,7 +14,7 @@
       
 
         li{
-            color: black;
+            color: rgb(82, 82, 82);
             font-size: 0.5rem;
         }
     }

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Futura";
   src: url("./fonts/FUTURA55REGULAR.TTF") format("truetype");
@@ -66,9 +70,6 @@ body {
   overflow-x: hidden;
 }
 
-body,
-input,
-textarea,
 button {
   font-family: 'Futura', sans-serif;
   font-size: 1rem;
