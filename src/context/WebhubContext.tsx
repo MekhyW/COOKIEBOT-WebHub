@@ -1,28 +1,23 @@
-import { createContext, useContext, useState } from "react"
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
-const WebhubContext = createContext({} as any);
+const WebhubContext = createContext<any>(null);
 
-export const WebhubProvider = (props: any) => {
+export function WebhubProvider({ children }: { children: React.ReactNode }) {
+  const [language, setLanguage] = useState<string>(() => {
+    return localStorage.getItem('language') || 'pt-BR';
+  });
 
-    const [language, setLanguage] = useState(navigator.language);
-    const [userId, setUserId] = useState("");
-    const [groups, setGroups] = useState([]);
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
 
-
-    const data = {
-        language: language,
-        setLanguage: (lang:any) => setLanguage(lang),
-        userId: userId,
-        setUserId: (id:any) => setUserId(id),
-        groups: groups,
-        setGroups: (gr:any) => setGroups(gr)
-    }
-
-    return (
-        <WebhubContext.Provider value={data}>
-            {props.children}
-        </WebhubContext.Provider>
-
-    )
+  return (
+    <WebhubContext.Provider value={{ language, setLanguage }}>
+      {children}
+    </WebhubContext.Provider>
+  );
 }
-export const useWebhubContext = () => useContext(WebhubContext);
+
+export function useWebhubContext() {
+  return useContext(WebhubContext);
+}

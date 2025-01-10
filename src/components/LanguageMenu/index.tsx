@@ -1,4 +1,5 @@
 import { Cell, Divider, Radio } from '@telegram-apps/telegram-ui';
+import '@telegram-apps/telegram-ui/dist/styles.css';
 import styles from './LanguageMenu.module.scss';
 import { useWebhubContext } from '../../context/WebhubContext';
 

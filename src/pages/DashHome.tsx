@@ -37,27 +37,27 @@ export default function DashHome() {
                 <div className="mt-6 space-y-3">
                     <a href='/dashboard/general' className="w-full bg-orange-100 text-amber-800 py-2 rounded-lg flex items-center justify-start px-4">
                         <div className='mr-4'><Gear size={20} color='#000' /></div>
-                        Configurações Gerais
+                        <FormattedMessage id="home.generalconfig"/>
                     </a>
                     <a href='/dashboard/moderation' className="w-full bg-orange-100 text-amber-800 py-2 rounded-lg flex items-center justify-start px-4">
                         <div className='mr-4'><Wrench size={20} color='#000' /></div>
-                        Ferramentas de Moderação
+                        <FormattedMessage id="home.moderation"/>
                     </a>
-                    <a href='/dashboard/general' className="w-full bg-orange-100 text-amber-800 py-2 rounded-lg flex items-center justify-start px-4">
+                    <a href='/dashboard/posts' className="w-full bg-orange-100 text-amber-800 py-2 rounded-lg flex items-center justify-start px-4">
                         <div className='mr-4'><AddressBook size={20} color='#000' /></div>
-                        Posts e Publicações
+                        <FormattedMessage id="home.posts"/>
                     </a>
                     <a href='https://t.me/CookiebotPostmail' className="w-full bg-yellow-100 text-yellow-700 py-2 rounded-lg flex items-center justify-start px-4">
                         <div className='mr-4'><Article size={20} color='#000' /></div>
-                        Mural de Publicações
+                        <FormattedMessage id="home.updates"/>
                     </a>
                     <a href='https://t.me/+mX6W3tGXPew2OTIx' className="w-full bg-blue-100 text-blue-700 py-2 rounded-lg flex items-center justify-start px-4">
                         <div className='mr-4'><Users size={20} color='#000' /></div>
-                        Grupo de Testes e Assistência
+                        <FormattedMessage id="home.testgroup"/>
                     </a>
                     <a href='https://t.me/cookiebotupdates' className="w-full bg-blue-100 text-blue-700 py-2 rounded-lg flex items-center justify-start px-4">
                         <div className='mr-4'><Users size={20} color='#000' /></div>
-                        Canal de Updates
+                        <FormattedMessage id="home.updateschannel"/>
                     </a>
                 </div>
             </div>
