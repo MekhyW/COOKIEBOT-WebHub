@@ -1,5 +1,6 @@
 {
     "home.welcome": "Bem-vindo ao Painel de Configurações do Cookiebot!",
+    "home.slogan": "O seu parceiro para todas as suas conversas!",
     "home.groupBotCount": "Estou atualmente em XXX grupos!",
     "home.inviteMeText": "Adicione o bot ao seu grupo clicando em “Me Convide!”\nOu se precisar configurar algo no bot em seu grupo, escolha o botão correspondente abaixo! Em caso de dúvidas ou comentários, contate @MekhyW",
     "home.inviteMeButton": "Me Convide!",
@@ -14,7 +15,7 @@
     "general.chatrules": "Regras do Chat",
     "general.chatrulesLabel": "Digite aqui as regras do chat que aparecem ao digitar o comando /regras",
     "general.checkOptions1": "Evitar Comandos Conflitantes com outros Bots Furry",
-    "general.checkOptions2": "Bloquear Conteúdo \"Não Seguro para o Trabalho\"",
+    "general.checkOptions2": "Bloquear Conteúdo \"NSFW\"",
     "general.checkOptions3": "Função de Entretenimento",
     "general.checkOptions4": "Funções de Utilidade",
     "general.redefine": "Redefinir configurações",

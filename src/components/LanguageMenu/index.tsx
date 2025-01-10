@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { Cell, Divider, Radio } from '@telegram-apps/telegram-ui';
 import '@telegram-apps/telegram-ui/dist/styles.css';
 import styles from './LanguageMenu.module.scss';
@@ -5,7 +7,8 @@ import { useWebhubContext } from '../../context/WebhubContext';
 
 export function LanguageMenu() {
 
-    
+    const [showLanguageConfig, setShowLanguageConfig] = useState(true);
+
     const context = useWebhubContext();
 
     const handleLanguage = (e:any) =>{
@@ -15,7 +18,7 @@ export function LanguageMenu() {
         <div className={styles.language}>
             <ul className={styles.language__list}>
                 <li>
-                    <Cell>Languages</Cell>
+                    <Cell onClick={() => setShowLanguageConfig(!showLanguageConfig)}>Close</Cell>
                     <Divider/>
                 </li>
 

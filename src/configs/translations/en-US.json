@@ -1,5 +1,6 @@
 {
     "home.welcome": "Welcome to the Cookiebot Settings Panel!",
+    "home.slogan": "Your buddy for all your conversations!",
     "home.groupBotCount": "I am currently in XXX groups!",
     "home.inviteMeText": "Add the bot to your group by clicking on “Invite Me!”\nOr if you need to configure something in the bot in your group, choose the corresponding button below! If you have any questions or feedback, contact @MekhyW",
     "home.inviteMeButton": "Invite Me!",

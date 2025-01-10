@@ -58,23 +58,9 @@
   font-style: italic;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  color: var(--brown-700) !important;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-button {
-  font-family: 'Futura', sans-serif;
-  font-size: 1rem;
-  color:var(--brown-700) !important;
-  
+@font-face {
+  font-family: "Lobster";
+  src: url("./fonts/Lobster-Regular.ttf") format("truetype");
 }
 
 :root {
