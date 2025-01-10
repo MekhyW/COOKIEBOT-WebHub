@@ -1,0 +1,17 @@
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+ 
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/home_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: moveBackground 10s linear infinite;
+    z-index: -1;
+}

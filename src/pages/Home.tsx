@@ -1,20 +1,22 @@
+import { useState } from 'react';
+import { FormattedMessage } from "react-intl";
+import { Globe, SignIn } from '@phosphor-icons/react';
+
 import cookieAvatar from '../assets/cookiebot_avatar.jpeg';
 import styles from '../styles/Home.module.scss';
 
-import { FormattedMessage } from "react-intl";
-import { useState } from 'react';
 import { LanguageMenu } from '../components/LanguageMenu';
-import { Globe, SignIn } from '@phosphor-icons/react';
+import { BackgroundImage } from '../components/MovingBackground/MovingBackground';
 
 export default function Home() {
-
     const [showLanguageConfig, setShowLanguageConfig] = useState(false);
 
     return (
-        <main className="relative min-h-screen bg-[url('./assets/Background2.png')]">
-            <div>
-                <div className="top-0 w-full flex justify-between items-center px-10 py-5">
-                    <img src={cookieAvatar} className="rounded-md h-12"></img>
+        <main className="relative min-h-screen">
+            <BackgroundImage />
+            <div className="relative min-h-screen bg-[url('./assets/Overlay.png')] bg-cover">
+                <div className="top-0 w-full flex justify-between items-center px-10 py-5 z-10">
+                    <img src={cookieAvatar} className="rounded-md h-12" alt="Cookie Avatar"></img>
                     <nav className='flex sm:flex-row flex-col'>
                         <a href="/privacy" className="text-zinc-600 hover:text-yellow-500 font-bold mr-4">Privacy</a>
                         <a href="https://t.me/cookiebotupdates" className="text-zinc-600 hover:text-yellow-500 font-bold mr-4">Development</a>
@@ -25,7 +27,7 @@ export default function Home() {
                             <span className='flex flex-row justify-center items-center mr-2 font-bold'><SignIn size={16} />Login</span>
                         </a>
                         <div className='ml-2'>
-                        <div className={styles.home__content__language}>
+                            <div className={styles.home__content__language}>
                                 <button onClick={() => setShowLanguageConfig(!showLanguageConfig)}><Globe size={32} color='#000' /></button>
                             </div>
                             {showLanguageConfig &&
@@ -34,7 +36,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-64 text-start">
+                <div className="mt-64 text-start z-10">
                     <div className="flex flex-col items-start text-center ml-0 sm:ml-10">
                         <h1 className="text-8xl font-extrabold text-yellow-600 font-lobster ml-6">Cookiebot!</h1>
                         <div className="ml-6 text-start w-96">
@@ -49,5 +51,5 @@ export default function Home() {
                 </div>
             </div>
         </main>
-    )
+    );
 }
