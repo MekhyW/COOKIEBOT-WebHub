@@ -13,7 +13,7 @@ export default function Privacy() {
             <p><b>Information Collection and Use</b></p><br/>
 
             <p>1. <b>Group and User Identification</b></p><br/>
-            <p>• Cookiebot stores the IDs of groups it is a member of to facilitate its functionalities within these groups.</p><br/>
+            <p>• Cookiebot stores the IDs, titles and profile photos of groups it is a member of to facilitate its functionalities within these groups.</p><br/>
             <p>• The bot stores usernames of users within groups as they send messages, enabling it to tag users within these chats.</p><br/>
 
             <p>2. <b>Media and Stickers</b></p><br/>
@@ -27,17 +27,18 @@ export default function Privacy() {
 
             <p><b>Data Storage and Security</b></p><br/>
 
-            <p>• All stored data is kept in a secure database accessible only via encrypted SSH connections.</p><br/>
-            <p>• Message contexts are temporarily stored in RAM and are not saved to the database. This data is volatile and quickly exchanged, ensuring it is not retained for long-term use.</p><br/>
-            <p>• Cookiebot does not store any message content, personal information, profile photos, or perform any form of authentication.</p><br/>
-            <p>• Error messages are sent directly to the bot creator for debugging purposes but are not stored.</p><br/>
+            <p>• All stored data (except for group profile photos) is kept in a secure database accessible only via encrypted SSH connections.</p><br/>
+            <p>• Group profile photos are stored in a public Google Cloud Storage bucket and are accessible via signed URLs. These URLs however are NOT linked to any information of the group or its admins.</p><br/>
+            <p>• Message contexts are temporarily stored in RAM but are NOT saved to the database. This data is volatile and quickly exchanged, ensuring it is not retained for long-term use.</p><br/>
+            <p>• Cookiebot does NOT store any message content, personal information or personal profile photos.</p><br/>
+            <p>• Error messages are sent directly to the bot creator for debugging purposes but are NOT stored.</p><br/>
 
             <p><b>User Interactions</b></p><br/>
 
             <p>• Messages sent privately to the bot are never stored.</p><br/>
             <p>• In group chats, only the username and group ID are stored from group messages. For sticker messages, the sticker ID is stored; otherwise, no other data is stored.</p><br/>
-            <p>• When interacting directly with the bot to change rules, welcome messages, or configurations, the context of these messages is volatile and not stored in the database.</p><br/>
-            <p>• Messages that do not involve the bot will not result in any data storage other than what is specified above.</p><br/>
+            <p>• When interacting directly with the bot to change rules, welcome messages, or configurations, the context of these messages is volatile and NOT stored in the database.</p><br/>
+            <p>• Messages that do not involve the bot will NOT result in any data storage other than what is specified above.</p><br/>
 
             <p><b>Open Source Code</b></p><br/>
             <p>Cookiebot's code is open source and available in the following repositories:</p><br/>
