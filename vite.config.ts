@@ -13,7 +13,7 @@ const readLocalFile = (filePath: string) => {
 
 
 // https://vitejs.dev/config/
-export default ({ mode }) => {
+export default ({ mode }: { mode: string }) => {
   process.env = {...process.env, ...loadEnv(mode, process.cwd())};
 
   const isHttpsEnabled = process.env.VITE_ENABLE_HTTPS === '1';
@@ -22,8 +22,8 @@ export default ({ mode }) => {
     server: {
       port: isHttpsEnabled ? 443 : undefined,
       https: {
-        key: isHttpsEnabled ? readLocalFile(process.env.VITE_HTTPS_KEY) : undefined,
-        cert: isHttpsEnabled ? readLocalFile(process.env.VITE_HTTPS_CERT) : undefined,
+        key: isHttpsEnabled && process.env.VITE_HTTPS_KEY ? readLocalFile(process.env.VITE_HTTPS_KEY) : undefined,
+        cert: isHttpsEnabled && process.env.VITE_HTTPS_CERT ? readLocalFile(process.env.VITE_HTTPS_CERT) : undefined,
       }
     },
     css: {

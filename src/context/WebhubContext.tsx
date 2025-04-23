@@ -10,7 +10,13 @@ export type WebhubContextType = {
   setAccessToken: (language: string) => void;
 }
 
-export const WebhubContext = createContext<WebhubContextType>(null);
+export const WebhubContext = createContext<WebhubContextType>({
+  language: '',
+  setLanguage: () => {},
+  accessToken: null,
+  isLoggedIn: false,
+  setAccessToken: () => {}
+});
 
 export function WebhubProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<string>(() => {

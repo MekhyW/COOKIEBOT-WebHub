@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FormattedMessage } from "react-intl";
 import { Globe } from '@phosphor-icons/react';
 
@@ -12,6 +12,7 @@ import {useWebhubContext} from "../context/WebhubContext.tsx";
 import {login} from "../configs/api/axios.ts";
 import {useGetUserGroups} from "../configs/api/groups.ts";
 import {setTelegramAuthData} from "../configs/auth/token.ts";
+import { enableDevMode, isDevMode, disableDevMode } from "../configs/auth/token.ts";
 
 const UserGroups = () => {
     const {data, error, isFetching} = useGetUserGroups()
@@ -19,7 +20,7 @@ const UserGroups = () => {
     if (isFetching) return <p>Loading...</p>
     if (error) return <p>Error: {error.message}</p>
 
-    if (!data.data) return <p>No data</p>
+    if (!data?.data) return <p>No data</p>
 
     if (data) {
         console.log(data.data)
@@ -28,7 +29,7 @@ const UserGroups = () => {
     return (
         <div className={"text-red-900 text-2xl"}>
             <h1>User Groups: </h1>
-            {data && data.data.map((group) => { return <p>{group.name}</p> })}
+            {data && data.data.map((group: { name: string }) => { return <p key={group.name}>{group.name}</p> })}
         </div>
     );
 }
@@ -49,6 +50,23 @@ export default function Home() {
                         <a href="https://github.com/MekhyW/COOKIEBOT-Telegram-Group-Bot" className="text-zinc-600 hover:text-yellow-500 font-bold">Github</a>
                     </nav>
                     <div className='flex flex-row justify-center items-center'>
+                        {import.meta.env.DEV && (
+                            <button
+                                onClick={() => {
+                                    if (isDevMode()) {
+                                        disableDevMode();
+                                        window.location.reload();
+                                    } else {
+                                        enableDevMode();
+                                        setAccessToken('dev_mode_token');
+                                        window.location.reload();
+                                    }
+                                }}
+                                className="mr-4 px-4 py-2 bg-red-500 text-white rounded-md"
+                            >
+                                {isDevMode() ? 'Disable Dev Mode' : 'Enable Dev Mode'}
+                            </button>
+                        )}
                         <LoginButton
                             botUsername={"CookieMWbot"}
                             onAuthCallback={async (authData) => {

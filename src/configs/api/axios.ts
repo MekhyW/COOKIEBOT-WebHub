@@ -1,5 +1,5 @@
 import axios from "axios";
-import {getAccessToken, getTelegramAuthData, setAccessToken} from "../auth/token.ts";
+import {getAccessToken, getTelegramAuthData, setAccessToken, isDevMode} from "../auth/token.ts";
 import {jwtDecode} from "jwt-decode";
 
 export const botApi = axios.create({
@@ -11,9 +11,16 @@ export const backendApi = axios.create({
 })
 
 export const login = (telegramAuthData: object) => {
-    return botApi.post('/login', telegramAuthData)
+    if (isDevMode()) {
+        // Mock successful login response for dev mode
+        return Promise.resolve({
+            data: {
+                accessToken: 'dev_mode_token'
+            }
+        });
+    }
+    return botApi.post('/login', telegramAuthData);
 }
-
 
 const loginAndSaveToken = async (telegramAuthData: object) => {
     const loginResponse = await login(telegramAuthData)
@@ -32,6 +39,11 @@ const getOrRenewToken = async () => {
             return token;
         }
         return await loginAndSaveToken(authData)
+    }
+
+    // Skip token validation in dev mode
+    if (isDevMode()) {
+        return token;
     }
 
     try {
