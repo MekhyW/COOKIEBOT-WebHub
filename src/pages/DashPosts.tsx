@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { Slider } from "../components/Slider/Slider.tsx";
+import { ArrowCounterClockwise } from '@phosphor-icons/react';
 
 export default function DashPosts() {
     const [timeout, settimeout] = useState(60);
 
     return (
-    <main className="bg-[url('./assets/home_background.png')] min-h-screen flex items-center justify-center">
-        <div className="bg-white rounded-xl shadow-lg p-6 max-w-md w-full text-center">
+    <main className="bg-[url('./assets/bg1.jpg')] bg-cover min-h-screen flex items-center justify-center">
+        <div className="rounded-xl shadow-lg p-6 max-w-md w-full text-center">
             <div className="justify-between items-center p-2">
                 <div className='text-left'>
-                    <a href='/dashboard/home' className='text-black font-bold'>⬅️ <FormattedMessage id="mod.back" /></a>
+                    <a href='/dashboard/home' className='text-white'>⬅️ <FormattedMessage id="mod.back" /></a>
                 </div>
-                <a className="text-black font-bold"><FormattedMessage id="posts.title" /></a>
+                <a className="text-white font-bold"><FormattedMessage id="posts.title" /></a>
             </div>
             <div className="relative text-center">
                 <div className="mt-2 mr-2 ml-2">
@@ -46,7 +47,7 @@ export default function DashPosts() {
                 </div>
                 <div className="mt-6">
                         <button className="w-full flex items-center justify-center bg-amber-500 text-black py-2 rounded-md text-sm font-medium hover:bg-yellow-700 transition">
-                            <span className="mr-2">↩</span> <FormattedMessage id="general.redefine" />
+                            <span className="mr-2"><ArrowCounterClockwise size={20} color='#000' /></span> <FormattedMessage id="general.redefine" />
                         </button>
                 </div>
             </div>

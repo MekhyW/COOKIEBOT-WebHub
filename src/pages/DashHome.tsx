@@ -3,7 +3,7 @@ import cookieAvatar from '../assets/cookiebot_avatar.jpeg';
 import { FormattedMessage } from "react-intl";
 import { useState } from 'react';
 import { LanguageMenu } from '../components/LanguageMenu';
-import { Globe, Gear, Wrench, AddressBook, Article, Users } from '@phosphor-icons/react';
+import { Globe, Gear, Megaphone, TestTube, Shield, Sticker, Mailbox } from '@phosphor-icons/react';
 import { useGetChatCount } from '../hooks/useGetChatCount';
 
 export default function DashHome() {
@@ -12,7 +12,7 @@ export default function DashHome() {
 
     return (
     <main className="bg-[url('./assets/home_background.png')] min-h-screen flex items-center justify-center">
-        <div className="bg-white rounded-xl shadow-lg p-6 max-w-md w-full text-center">
+        <div className="rounded-xl shadow-lg p-6 max-w-md w-full text-center">
             <div className="relative">
                 <div>
                     <div className={styles.home__content__language}>
@@ -39,28 +39,28 @@ export default function DashHome() {
                 </a>
 
                 <div className="mt-6 space-y-3">
-                    <a href='/dashboard/general' className="w-full bg-orange-100 text-amber-800 py-2 rounded-lg flex items-center justify-start px-4">
+                    <a href='/dashboard/general' className="w-full bg-orange-100 text-amber-800 py-2 rounded-full flex items-center justify-center px-4">
                         <div className='mr-4'><Gear size={20} color='#000' /></div>
                         <FormattedMessage id="home.generalconfig"/>
                     </a>
-                    <a href='/dashboard/moderation' className="w-full bg-orange-100 text-amber-800 py-2 rounded-lg flex items-center justify-start px-4">
-                        <div className='mr-4'><Wrench size={20} color='#000' /></div>
+                    <a href='/dashboard/moderation' className="w-full bg-orange-100 text-amber-800 py-2 rounded-full flex items-center justify-center px-4">
+                        <div className='mr-4'><Shield size={20} color='#000' /></div>
                         <FormattedMessage id="home.moderation"/>
                     </a>
-                    <a href='/dashboard/posts' className="w-full bg-orange-100 text-amber-800 py-2 rounded-lg flex items-center justify-start px-4">
-                        <div className='mr-4'><AddressBook size={20} color='#000' /></div>
+                    <a href='/dashboard/posts' className="w-full bg-orange-100 text-amber-800 py-2 rounded-full flex items-center justify-center px-4">
+                        <div className='mr-4'><Sticker size={20} color='#000' /></div>
                         <FormattedMessage id="home.posts"/>
                     </a>
-                    <a href='https://t.me/CookiebotPostmail' className="w-full bg-yellow-100 text-yellow-700 py-2 rounded-lg flex items-center justify-start px-4">
-                        <div className='mr-4'><Article size={20} color='#000' /></div>
+                    <a href='https://t.me/CookiebotPostmail' className="w-full bg-yellow-100 text-yellow-700 py-2 rounded-full flex items-center justify-center px-4">
+                        <div className='mr-4'><Mailbox size={20} color='#000' /></div>
                         <FormattedMessage id="home.updates"/>
                     </a>
-                    <a href='https://t.me/+mX6W3tGXPew2OTIx' className="w-full bg-blue-100 text-blue-700 py-2 rounded-lg flex items-center justify-start px-4">
-                        <div className='mr-4'><Users size={20} color='#000' /></div>
+                    <a href='https://t.me/+mX6W3tGXPew2OTIx' className="w-full bg-blue-100 text-blue-700 py-2 rounded-full flex items-center justify-center px-4">
+                        <div className='mr-4'><TestTube size={20} color='#000' /></div>
                         <FormattedMessage id="home.testgroup"/>
                     </a>
-                    <a href='https://t.me/cookiebotupdates' className="w-full bg-blue-100 text-blue-700 py-2 rounded-lg flex items-center justify-start px-4">
-                        <div className='mr-4'><Users size={20} color='#000' /></div>
+                    <a href='https://t.me/cookiebotupdates' className="w-full bg-blue-100 text-blue-700 py-2 rounded-full flex items-center justify-center px-4">
+                        <div className='mr-4'><Megaphone size={20} color='#000' /></div>
                         <FormattedMessage id="home.updateschannel"/>
                     </a>
                 </div>
