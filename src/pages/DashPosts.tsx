@@ -16,7 +16,7 @@ export default function DashPosts() {
                 <a className="text-white font-bold"><FormattedMessage id="posts.title" /></a>
             </div>
             <div className="relative text-center">
-                <div className="mt-2 mr-2 ml-2">
+                <div className="bg-white rounded-md mt-2 mr-2 ml-2 px-2 py-2">
                     <div className="flex justify-between items-center">
                         <label className="text-sm font-semibold text-black"><FormattedMessage id="posts.sliderTitle" /></label>
                         <span className="text-xs text-black">5-500(s)</span>
@@ -31,14 +31,14 @@ export default function DashPosts() {
                     <p className="text-xs text-black mt-1"><FormattedMessage id="posts.sliderSubtitle" /></p>
                 </div>
                 <div className='mt-6 space-y-4'>
-                        <div className="flex items-center justify-between">
+                        <div className="w-full bg-white text-amber-800 py-2 rounded-sm flex items-center justify-between px-4">
                             <label className='text-sm font-medium text-black'>
                                 <FormattedMessage id="posts.content" />
                             </label>
                             <input type="checkbox" className="w-5 h-5 text-yellow-500 focus:ring-yellow-400 border-gray-300 rounded"></input>
                         </div>
 
-                        <div className="flex items-center justify-between">
+                        <div className="w-full bg-white text-amber-800 py-2 rounded-sm flex items-center justify-between px-4">
                             <label className="text-sm font-medium text-black">
                                 <FormattedMessage id="posts.receive" />
                             </label>

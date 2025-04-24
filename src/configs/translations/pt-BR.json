@@ -20,16 +20,16 @@
     "general.checkOptions4": "Funções de Utilidade (como busca de imagens)",
     "general.redefine": "Redefinir para o Padrão",
     "mod.back": "Voltar",
-    "mod.title": "Configurações de Moderação",
+    "mod.title": "Moderação",
     "mod.captchaTitle": "Tempo de Resolução de Captcha",
     "mod.captchaSubtitle": "Defina o tempo em segundos para o Captcha para Entrar no Grupo",
     "mod.stickerTitle": "Limitador de Spam de Stickers",
     "mod.stickerSubtitle": "Defina a quantidade de stickers enviados para acionar aviso de spam",
     "mod.timeoutTitle": "Tempo de Espera em Imagens",
     "mod.timeoutSubtitle": "Defina o tempo em minutos sem enviar imagens quando alguém entra no grupo",
-    "posts.title": "Configurações de Posts",
-    "posts.content": "Permitir enviar conteúdo deste grupo para outros",
-    "posts.receive": "Permitir receber conteúdo de outros grupos",
+    "posts.title": "Posts e Publicações",
+    "posts.content": "Permitir enviar posts deste grupo para outros",
+    "posts.receive": "Permitir receber posts de outros grupos",
     "posts.sliderTitle": "Limitador de Quantidade de Posts",
-    "posts.sliderSubtitle": "Defina a quantidade de posts enviados pelo Cookiebot diariamente para o seu grupo" 
+    "posts.sliderSubtitle": "Defina a quantidade máxima de posts enviados pelo Cookiebot diariamente para o seu grupo" 
   }

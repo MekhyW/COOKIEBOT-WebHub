@@ -20,16 +20,16 @@
     "general.checkOptions4": "Utility Functions (like image search)",
     "general.redefine": "Reset to Default",
     "mod.back": "Go Back",
-    "mod.title": "Moderation Settings",
+    "mod.title": "Moderation",
     "mod.captchaTitle": "Captcha Resolution Time",
     "mod.captchaSubtitle": "Set the time in seconds for the Captcha to Join Group",
     "mod.stickerTitle": "Sticker Spam Limiter",
     "mod.stickerSubtitle": "Set the amount of stickers sent to trigger warning for spam",
     "mod.timeoutTitle": "Timeout on Images",
     "mod.timeoutSubtitle": "Set the time in minutes without sending any images when someone joins group",
-    "posts.title": "Posts Settings",
-    "posts.content": "Allow to send content from this group to others",
-    "posts.receive": "Allow to receive content from other groups",
+    "posts.title": "Posts and Publications",
+    "posts.content": "Allow to send posts from this group to others",
+    "posts.receive": "Allow to receive posts from other groups",
     "posts.sliderTitle": "Post Quantity Limiter",
-    "posts.sliderSubtitle": "Set the amount of posts sent by Cookiebot daily to your group"
+    "posts.sliderSubtitle": "Set the maximum amount of posts sent by Cookiebot daily to your group"
 }

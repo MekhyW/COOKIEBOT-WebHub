@@ -18,7 +18,7 @@ export default function DashModeration() {
                 <a className="text-white font-bold"><FormattedMessage id="mod.title" /></a>
             </div>
             <div className="relative text-center">
-                <div className="mt-2 mr-2 ml-2">
+                <div className="bg-white rounded-md mt-2 mr-2 ml-2 px-2 py-2">
                     <div className="flex justify-between items-center">
                         <label className="text-sm font-semibold text-black"><FormattedMessage id="mod.captchaTitle" /></label>
                         <span className="text-xs text-black">30-300(s)</span>
@@ -32,7 +32,7 @@ export default function DashModeration() {
                     />
                     <p className="text-xs text-black mt-1"><FormattedMessage id="mod.captchaSubtitle" /></p>
                 </div>
-                <div className="mt-2 mr-2 ml-2">
+                <div className="bg-white rounded-md mt-2 mr-2 ml-2 px-2 py-2">
                     <div className="flex justify-between items-center">
                         <label className="text-sm font-semibold text-black"><FormattedMessage id="mod.stickerTitle" /></label>
                         <span className="text-xs text-black">5-500(s)</span>
@@ -46,7 +46,7 @@ export default function DashModeration() {
                     />
                     <p className="text-xs text-black mt-1"><FormattedMessage id="mod.stickerSubtitle" /></p>
                 </div>
-                <div className="mt-2 mr-2 ml-2">
+                <div className="bg-white rounded-md mt-2 mr-2 ml-2 px-2 py-2">
                     <div className="flex justify-between items-center">
                         <label className="text-sm font-semibold text-black"><FormattedMessage id="mod.timeoutTitle" /></label>
                         <span className="text-xs text-black">60-900(s)</span>
