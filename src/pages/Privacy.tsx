@@ -2,55 +2,66 @@ import styles from '../styles/Privacy.module.scss';
 
 export default function Privacy() {
     return (
-        <div className={styles.privacy}>
-            <p><b>Privacy Statement for Cookiebot</b></p><br/>
+        <main className="bg-[url('./assets/home_background.png')] min-h-screen py-8">
+            <div className={styles.privacy}>
+                <h1>Privacy Statement for Cookiebot</h1>
 
-            <p>Cookiebot is a Telegram bot designed to manage and enhance group interactions. This privacy statement outlines the types of information Cookiebot collects, how it is stored, and the purposes for which it is used.</p><br/>
-            <p><i>By using Cookiebot, you agree to the terms of this privacy statement.</i></p>
+                <p>Cookiebot is a Telegram bot designed to manage and enhance group interactions. This privacy statement outlines the types of information Cookiebot collects, how it is stored, and the purposes for which it is used.</p>
+                <p><i>By using Cookiebot, you agree to the terms of this privacy statement.</i></p>
 
-            <br/>
-            
-            <p><b>Information Collection and Use</b></p><br/>
+                <p className="section-title">Information Collection and Use</p>
 
-            <p>1. <b>Group and User Identification</b></p><br/>
-            <p>• Cookiebot stores the IDs, titles and profile photos of groups it is a member of to facilitate its functionalities within these groups.</p><br/>
-            <p>• The bot stores usernames of users within groups as they send messages, enabling it to tag users within these chats.</p><br/>
+                <p><b>1. Group and User Identification</b></p>
+                <ul>
+                    <li>Cookiebot stores the IDs, titles and profile photos of groups it is a member of to facilitate its functionalities within these groups.</li>
+                    <li>The bot stores usernames of users within groups as they send messages, enabling it to tag users within these chats.</li>
+                </ul>
 
-            <p>2. <b>Media and Stickers</b></p><br/>
-            <p>• Sticker IDs and media IDs can be stored by the bot, but this data is never processed beyond storage.</p><br/>
+                <p><b>2. Media and Stickers</b></p>
+                <ul>
+                    <li>Sticker IDs and media IDs can be stored by the bot, but this data is never processed beyond storage.</li>
+                </ul>
 
-            <p>3. <b>Configuration and Rules</b></p><br/>
-            <p>• Welcome messages, rules messages, and configurations are only stored when a user explicitly sends them to the bot for setup purposes.</p><br/>
+                <p><b>3. Configuration and Rules</b></p>
+                <ul>
+                    <li>Welcome messages, rules messages, and configurations are only stored when a user explicitly sends them to the bot for setup purposes.</li>
+                </ul>
 
-            <p>4. <b>Fake Account Reporting</b></p><br/>
-            <p>• The bot stores the IDs of users reported as fake accounts by others to protect groups from spam and malicious accounts.</p><br/>
+                <p><b>4. Fake Account Reporting</b></p>
+                <ul>
+                    <li>The bot stores the IDs of users reported as fake accounts by others to protect groups from spam and malicious accounts.</li>
+                </ul>
 
-            <p><b>Data Storage and Security</b></p><br/>
+                <p className="section-title">Data Storage and Security</p>
+                <ul>
+                    <li>All stored data (except for group profile photos) is kept in a secure database accessible only via encrypted SSH connections.</li>
+                    <li>Group profile photos are stored in a public Google Cloud Storage bucket and are accessible via signed URLs. These URLs however are NOT linked to any information of the group or its admins.</li>
+                    <li>Message contexts are temporarily stored in RAM but are NOT saved to the database. This data is volatile and quickly exchanged, ensuring it is not retained for long-term use.</li>
+                    <li>Cookiebot does NOT store any message content, personal information or personal profile photos.</li>
+                    <li>Error messages are sent directly to the bot creator for debugging purposes but are NOT stored.</li>
+                </ul>
 
-            <p>• All stored data (except for group profile photos) is kept in a secure database accessible only via encrypted SSH connections.</p><br/>
-            <p>• Group profile photos are stored in a public Google Cloud Storage bucket and are accessible via signed URLs. These URLs however are NOT linked to any information of the group or its admins.</p><br/>
-            <p>• Message contexts are temporarily stored in RAM but are NOT saved to the database. This data is volatile and quickly exchanged, ensuring it is not retained for long-term use.</p><br/>
-            <p>• Cookiebot does NOT store any message content, personal information or personal profile photos.</p><br/>
-            <p>• Error messages are sent directly to the bot creator for debugging purposes but are NOT stored.</p><br/>
+                <p className="section-title">User Interactions</p>
+                <ul>
+                    <li>Messages sent privately to the bot are never stored.</li>
+                    <li>In group chats, only the username and group ID are stored from group messages. For sticker messages, the sticker ID is stored; otherwise, no other data is stored.</li>
+                    <li>When interacting directly with the bot to change rules, welcome messages, or configurations, the context of these messages is volatile and NOT stored in the database.</li>
+                    <li>Messages that do not involve the bot will NOT result in any data storage other than what is specified above.</li>
+                </ul>
 
-            <p><b>User Interactions</b></p><br/>
+                <p className="section-title">Open Source Code</p>
+                <p>Cookiebot's code is open source and available in the following repositories:</p>
+                <ul>
+                    <li><a href="https://github.com/MekhyW/COOKIEBOT-Telegram-Group-Bot">Cookiebot Telegram Group Bot</a></li>
+                    <li><a href="https://github.com/MekhyW/COOKIEBOT-backend">Cookiebot Backend</a></li>
+                    <li><a href="https://github.com/MekhyW/COOKIEBOT-WebHub">Cookiebot WebHub</a></li>
+                </ul>
 
-            <p>• Messages sent privately to the bot are never stored.</p><br/>
-            <p>• In group chats, only the username and group ID are stored from group messages. For sticker messages, the sticker ID is stored; otherwise, no other data is stored.</p><br/>
-            <p>• When interacting directly with the bot to change rules, welcome messages, or configurations, the context of these messages is volatile and NOT stored in the database.</p><br/>
-            <p>• Messages that do not involve the bot will NOT result in any data storage other than what is specified above.</p><br/>
+                <p className="section-title">Contact</p>
+                <p>If you have any questions or concerns about this privacy statement, please contact me, @mekhyw.</p>
 
-            <p><b>Open Source Code</b></p><br/>
-            <p>Cookiebot's code is open source and available in the following repositories:</p><br/>
-
-            <a href="https://github.com/MekhyW/COOKIEBOT-Telegram-Group-Bot">Cookiebot Telegram Group Bot</a><br/>
-            <a href="https://github.com/MekhyW/COOKIEBOT-backend">Cookiebot Backend</a><br/>
-            <a href="https://github.com/MekhyW/COOKIEBOT-WebHub">Cookiebot WebHub</a><br/>
-            <br/>
-            <p><b>Contact</b></p><br/>
-            <p>If you have any questions or concerns about this privacy statement, please contact me, @mekhyw.</p><br/>
-
-            <blockquote>Thank you for using Cookiebot. Your privacy is important to me, and I am committed to protecting your data while helping your group chat experience.</blockquote>
-        </div>
+                <blockquote>Thank you for using Cookiebot. Your privacy is important to me, and I am committed to protecting your data while helping your group chat experience.</blockquote>
+            </div>
+        </main>
     )
 }
