@@ -13,6 +13,7 @@ import messages_ptBR from "./configs/translations/pt-BR.json";
 import messages_es from "./configs/translations/es.json";
 
 import { useWebhubContext } from './context/WebhubContext';
+import Indev from './pages/indev';
 
 const messages = {
   'pt-BR': messages_ptBR,
@@ -33,6 +34,7 @@ export default function AppRouter() {
           <Route path="/dashboard/general" element={<DashGeneral />} />
           <Route path="/dashboard/moderation" element={<DashModeration />} />
           <Route path="/dashboard/posts" element={<DashPosts />} />
+          <Route path="/dashboard/events" element={<Indev />} />
         </Routes>
       </BrowserRouter>
     </IntlProvider>

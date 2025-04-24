@@ -10,6 +10,7 @@
     "home.testgroup": "Testing and Support Group",
     "home.updateschannel": "Updates Channel",
     "home.generalconfig": "General Settings",
+    "home.events": "Events Board",
     "general.welcome": "Welcome Message",
     "general.welcomeLabel": "Enter the message that will appear when someone joins the group.",
     "general.chatrules": "Chat Rules",
@@ -31,5 +32,6 @@
     "posts.content": "Allow to send posts from this group to others",
     "posts.receive": "Allow to receive posts from other groups",
     "posts.sliderTitle": "Post Quantity Limiter",
-    "posts.sliderSubtitle": "Set the maximum amount of posts sent by Cookiebot daily to your group"
+    "posts.sliderSubtitle": "Set the maximum amount of posts sent by Cookiebot daily to your group",
+    "indev": "Under development..."
 }

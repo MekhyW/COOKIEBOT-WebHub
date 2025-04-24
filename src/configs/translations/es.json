@@ -2,7 +2,7 @@
     "home.welcome": "¡Bienvenido al Panel de Configuración de Cookiebot!",
     "home.slogan": "¡Tu compañero para todas tus conversaciones!",
     "home.groupBotCount": "¡Actualmente estoy en {count} grupos activos!",
-    "home.inviteMeText": "Quieres agregarme a un grupo? selecciona “+ ¡Invitarme!”.\nO si quieres configurar algún ajuste, ¡sigue adelante y selecciona el ajuste que quieras configurar!\nAlguna pregunta o comentario? llama a @MekhyW",
+    "home.inviteMeText": "Quieres agregarme a un grupo? selecciona “+ ¡Invitarme!”.\nO si quieres configurar algún ajuste, ¡sigue adelante y selecciónalo!\nAlguna pregunta o comentario? llama a @MekhyW",
     "home.inviteMeButton": "¡Invitarme!",
     "home.moderation": "Herramientas de Moderación",
     "home.posts": "Publicaciones y Entradas",
@@ -10,6 +10,7 @@
     "home.testgroup": "Grupo de Pruebas y Asistencia",
     "home.updateschannel": "Canal de Actualizaciones",
     "home.generalconfig": "Configuraciones Generales",
+    "home.events": "Tablero de Eventos",
     "general.welcome": "Mensaje de Bienvenida",
     "general.welcomeLabel": "Ingrese aquí el mensaje que aparecerá cuando alguien se una al grupo.",
     "general.chatrules": "Reglas del Chat",
@@ -31,5 +32,6 @@
     "posts.content": "Permitir enviar posts de este grupo a otros",
     "posts.receive": "Permitir recibir posts de otros grupos",
     "posts.sliderTitle": "Limitador de Cantidad de Publicaciones",
-    "posts.sliderSubtitle": "Establezca la cantidad máxima de publicaciones enviadas por Cookiebot diariamente a su grupo" 
+    "posts.sliderSubtitle": "Establezca la cantidad máxima de publicaciones enviadas por Cookiebot diariamente a su grupo",
+    "indev": "En desarrollo..."
   }

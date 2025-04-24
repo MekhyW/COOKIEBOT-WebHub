@@ -3,7 +3,7 @@ import cookieAvatar from '../assets/cookiebot_avatar.jpeg';
 import { FormattedMessage } from "react-intl";
 import { useState } from 'react';
 import { LanguageMenu } from '../components/LanguageMenu';
-import { Globe, Gear, Megaphone, TestTube, Shield, Sticker, Mailbox } from '@phosphor-icons/react';
+import { Globe, Gear, Megaphone, TestTube, Shield, Sticker, Mailbox, Calendar } from '@phosphor-icons/react';
 import { useGetChatCount } from '../hooks/useGetChatCount';
 
 export default function DashHome() {
@@ -32,7 +32,7 @@ export default function DashHome() {
                         values={{ count: isLoading ? '...' : isError ? 'N/A' : chatCount?.number_chats || 0 }}
                     />
                 </h3>
-                <h3 className="text-black"><FormattedMessage id="home.inviteMeText"/></h3>
+                <h3 className="text-black text-sm"><FormattedMessage id="home.inviteMeText"/></h3>
 
                 <a href='https://t.me/CookieMWbot?startgroup=new' className="bg-amber-950 text-white px-4 py-2 rounded-md mt-4 font-medium flex justify-center mx-auto">
                     <span className="mr-2">+</span> <FormattedMessage id="home.inviteMeButton"/>
@@ -54,6 +54,10 @@ export default function DashHome() {
                     <a href='https://t.me/CookiebotPostmail' className="w-full bg-yellow-100 text-yellow-700 py-2 rounded-full flex items-center justify-center px-4">
                         <div className='mr-4'><Mailbox size={20} color='#000' /></div>
                         <FormattedMessage id="home.updates"/>
+                    </a>
+                    <a href='/dashboard/events' className="w-full bg-yellow-200 text-black py-2 rounded-full flex items-center justify-center px-4">
+                        <div className='mr-4'><Calendar size={20} color='#000' /></div>
+                        <FormattedMessage id="home.events"/>
                     </a>
                     <a href='https://t.me/+mX6W3tGXPew2OTIx' className="w-full bg-blue-100 text-blue-700 py-2 rounded-full flex items-center justify-center px-4">
                         <div className='mr-4'><TestTube size={20} color='#000' /></div>
