@@ -1,8 +1,8 @@
 {
     "home.welcome": "¡Bienvenido al Panel de Configuración de Cookiebot!",
     "home.slogan": "¡Tu compañero para todas tus conversaciones!",
-    "home.groupBotCount": "¡Actualmente estoy en XXX grupos!",
-    "home.inviteMeText": "Agrega el bot a tu grupo haciendo clic en “Invitarme!”\n¡O si necesitas configurar algo en el bot en tu grupo, elige el botón correspondiente a continuación! En caso de dudas o comentarios, contacte a @MekhyW",
+    "home.groupBotCount": "¡Actualmente estoy en {count} grupos activos!",
+    "home.inviteMeText": "Si quieres agregarme a un grupo, selecciona “+ ¡Invitarme!”.\nO si quieres configurar algún ajuste, ¡sigue adelante y selecciona el ajuste que quieras configurar!\nSi tienes alguna pregunta o comentario, comunícate con @MekhyW",
     "home.inviteMeButton": "¡Invitarme!",
     "home.moderation": "Herramientas de Moderación",
     "home.posts": "Publicaciones y Entradas",

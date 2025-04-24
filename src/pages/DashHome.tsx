@@ -1,15 +1,14 @@
 import styles from '../styles/Home.module.scss';
-
 import cookieAvatar from '../assets/cookiebot_avatar.jpeg';
-
 import { FormattedMessage } from "react-intl";
 import { useState } from 'react';
 import { LanguageMenu } from '../components/LanguageMenu';
 import { Globe, Gear, Wrench, AddressBook, Article, Users } from '@phosphor-icons/react';
+import { useGetChatCount } from '../hooks/useGetChatCount';
 
 export default function DashHome() {
-
     const [showLanguageConfig, setShowLanguageConfig] = useState(false);
+    const { data: chatCount, isLoading, isError } = useGetChatCount();
 
     return (
     <main className="bg-[url('./assets/home_background.png')] min-h-screen flex items-center justify-center">
@@ -27,7 +26,12 @@ export default function DashHome() {
                     <img src={cookieAvatar} className="rounded-full"></img>
                 </div>
                 <h1 className="text-xl font-bold mt-4 text-black"><FormattedMessage id="home.welcome" /></h1>
-                <h3 className="text-black"><FormattedMessage id="home.groupBotCount"/></h3>
+                <h3 className="text-black">
+                    <FormattedMessage 
+                        id="home.groupBotCount"
+                        values={{ count: isLoading ? '...' : isError ? 'N/A' : chatCount?.number_chats || 0 }}
+                    />
+                </h3>
                 <h3 className="text-black"><FormattedMessage id="home.inviteMeText"/></h3>
 
                 <a href='https://t.me/CookieMWbot?startgroup=new' className="bg-amber-950 text-white px-4 py-2 rounded-md mt-4 font-medium flex justify-center mx-auto">

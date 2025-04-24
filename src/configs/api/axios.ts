@@ -2,9 +2,13 @@ import axios from "axios";
 import {getAccessToken, getTelegramAuthData, setAccessToken, isDevMode} from "../auth/token.ts";
 import {jwtDecode} from "jwt-decode";
 
+const BASE_URL = import.meta.env.DEV 
+  ? '/bot-api'  // This will be proxied through Vite
+  : import.meta.env.VITE_BOT_API_URL;
+
 export const botApi = axios.create({
-    baseURL: `${import.meta.env.VITE_BOT_API_URL}`
-})
+    baseURL: BASE_URL
+});
 
 export const backendApi = axios.create({
     baseURL: `${import.meta.env.VITE_BACKEND_API_URL}`
