@@ -1,0 +1,100 @@
+{
+    "Common": {
+        "indev": "In development",
+        "auth": {
+            "signin": "Sign In",
+            "signup": "Sign Up",
+            "signout": "Exit"
+        },
+        "learn": {
+            "more": "Learn more",
+            "about_us": "About us",
+            "docs": "Documentation",
+            "ads": "For advertisers"
+        },
+        "legal": {
+            "cookies": "Cookie Usage",
+            "tos": "Terms of service",
+            "privacy": "Privacy policies",
+            "conduct": "Code of conduct"
+        },
+        "settings": {
+            "lang": {
+                "_": "Languages",
+                "pt-br": "Português - BR",
+                "en-us": "English - US"
+            }
+        }
+    },
+    "Commands": {
+        "back_home": "Back to home",
+        "try_again": "Try again",
+        "contact_dev": "Contact developers"
+    },
+    "HomePage": {
+        "inviteme": "Invite Me! ",
+        "slogan": "Your partner for all your conversations!",
+        "join": "Join now!"
+    },
+    "DashboardHome": {
+        "welcome": "Welcome to the Cookiebot Settings Panel!",
+        "inviteMeText": "Want to add me to a group? Select “+ Invite Me!” Or if you want to tweak a setting, go ahead and select it! If you have any questions, contact @MekhyW",
+        "inviteMeButton": "Invite me!",
+        "generalconfig": "General Settings",
+        "moderationconfig": "Moderation Tools",
+        "postsconfig": "Posts and Publications",
+        "mailconfig": "Mailboard",
+        "events": "Events Board",
+        "testgroup": "Test group and assistance",
+        "updateschannel": "Updates channel"
+    },
+    "DashboardGeneral": {
+        "back": "Back",
+        "general": "General Settings",
+        "welcome": "Welcome Message",
+        "welcomeLabel": "Enter here the message that will appear when someone joins the group.",
+        "chatRules": "Chat rules",
+        "chatRulesLabel": "Enter here the chat rules that appear when you type the command /rules",
+        "checkOptions1": "Avoid conflicting commands with other bots",
+        "checkOptions2": "Block NSFW content",
+        "checkOptions3": "Entertainment functions (memes, AI, etc.)",
+        "checkOptions4": "Utility functions (like image search)",
+        "redefine": "Reset to default"
+    },
+    "DashboardModeration": {
+        "back": "Back",
+        "title": "Moderation Settings",
+        "captchaTitle": "Captcha Resolution Time",
+        "captchaSubtitle": "Set the time in seconds for the Captcha to Enter the Group",
+        "stickerTitle": "Sticker Spam Limiter",
+        "stickerSubtitle": "Set the number of stickers sent to trigger spam warning",
+        "timeoutTitle": "Image Wait Time",
+        "timeoutSubtitle": "Set the time in minutes without sending images when someone joins the group",
+        "redefine": "Reset to default"
+    },
+    "DashboardPosts": {
+        "back": "Back",
+        "title": "Posts and Publications",
+        "sliderTitle": "Post Quantity Limiter",
+        "sliderSubtitle": "Set the maximum number of posts sent by Cookiebot daily to your group",
+        "content": "Allow sending posts from this group to others",
+        "receive": "Allow receiving posts from other groups",
+        "redefine": "Reset to default"
+    },
+    "DashboardEventsPage": {
+        "back": "Back",
+        "indev": "In development!"
+    },
+    "Footer": {
+        "rights": {
+            "text": "© COOKIEBOT - Development team - MekhyW, Dangerousplay, Dumb Moss, DuqueDuk, Strawberry, Mygui63",
+            "bottomtext": "Frontend made by Kenji The Fox & Sam Mahonri - © NEXTFUR FOUNDATION"
+        }
+    },
+    "HTTPCodes": {
+        "404": "Oops, this page does not exist! Check the URL and try again.",
+        "429": "Oops, we have limited your access to the application, try again later.",
+        "403": "You do not have permission to access this page.",
+        "500": "Oops, a bizarre error occurred, try again or contact the developer if it persists."
+    }
+}

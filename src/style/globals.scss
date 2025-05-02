@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --light: 240, 240, 240;
+  --dark: 33, 33, 36;
+
+  --background: 245, 217, 188;
+  --surface: 149, 87, 20;
+  --foreground: 237, 237, 237;
+
+  --primary: 196, 139, 23;
+  --secondary: 149, 87, 20;
+  --tertiary: 56, 56, 1, 255;
+  --quaternary: 203, 175, 163;
+
+  --success: 20, 160, 130;
+  --warning: 245, 130, 80;
+  --error: 255, 100, 120;
+
+  --trans-dur: 0.3s;
+
+}
+
+:root.light {
+  --light: 237, 237, 237;
+  --dark: 90, 80, 110;
+
+  --background: 237, 237, 237;
+  --surface: 245, 245, 245;
+  --foreground: 90, 80, 110;
+}
+
+:root.nextfur {
+  &.light {
+    --secondary: 149, 87, 20;
+  }
+}
+
+.bg-main {
+  background-image: url('../../public/Overlay.png');
+}
+
+.bg-main-dark {
+  background-image: url('../../public/bg1.jpg');
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-arbitrary {
+    word-break: break-word;
+  }
+}
+
+* {
+  @apply text-arbitrary;
+  will-change: auto;
+}
+
+body {
+  @apply text-foreground;
+  font-synthesis: none;
+  overflow-x: hidden;
+  overflow-y: auto
+}
+
+.backtrans {
+  @apply bg-background transition-colors duration-300;
+}
+
+body.trans-body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  @apply font-sans;
+}
+
+h1 {
+  @apply font-bold text-6xl;
+  line-height: 2.9rem;
+}
+
+h2 {
+  @apply font-bold text-5xl;
+  line-height: 2.25rem;
+}
+
+h3 {
+  @apply font-bold text-4xl;
+  line-height: 2rem;
+}
+
+h4 {
+  @apply font-bold text-3xl;
+  line-height: 1.75rem;
+}
+
+h5 {
+  @apply font-bold text-2xl;
+  line-height: 1.5rem;
+}
+
+h6 {
+  @apply font-bold text-xl;
+  line-height: 1.25rem;
+}
+
+p {
+  &.note {
+    @apply flex flex-row gap-2 items-center px-2 rounded-sm border-l-2 ;
+    svg {
+      @apply h-4 w-4;
+    }
+
+    &.primary {
+      @apply bg-primary/20 border-primary;
+    }
+
+    &.warning {
+      @apply bg-warning/20 border-warning;
+    }
+
+    &.success {
+      @apply bg-success/20 border-success;
+    }
+
+    &.error {
+      @apply bg-error/20 border-error;
+    }
+  }
+}
+
+.c-underline {
+  @apply underline decoration-foreground/30 hover:decoration-transparent;
+}
+
+.olink,
+article a {
+  background-image: linear-gradient(to right, rgb(var(--primary)), rgb(var(--primary)));
+  background-size: 0% 2px;
+  background-position-y: 100%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  transition: background-size var(--trans-dur) ease-in-out, color var(--trans-dur);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-size: 100% 2px;
+    background-position-x: 0%;
+  }
+
+}
+
+.active-link {
+  background-size: 100% 2px;
+  background-position-x: 0%;
+  @apply text-primary;
+}
+
+.gradient-nextfur {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary via-tertiary to-quaternary py-4 -mt-4;
+}
+
+.clip {
+  &.wire-p-r {
+    clip-path: path("m 134.99951,13.710792 -38.4452,44.6257 H 0 v 2.02985 h 97.49276 l 38.43693,-44.61537 h 134.99952 v -2.04018 z m -0.5457,35.45416 v 44.61537 H 0 v 2.03192 h 136.48366 v -44.61744 h 134.44555 v -2.02985 z M 0,126.74989 v 1.01699 1.01492 h 270.92921 v -1.01492 -1.01699 z m 0,36.73367 v 2.03192 h 85.78081 v 42.57105 h 185.1484 v -2.04019 H 87.81273 v -42.56278 z m 0,42.56278 v 2.04019 h 46.46125 l 39.89007,42.56898 h 184.57789 v -2.03812 H 87.23395 L 47.34388,206.04634 Z");
+  }
+
+  &.wire-p-l {
+    clip-path: path("m 135.9297,250.65551 38.4452,-42.56898 h 96.55431 v -2.02985 h -97.49276 l -38.43693,42.55865 H 0 v 2.04018 z m 0.5457,-40.52466 v -44.61537 h 134.45381 v -2.03192 H 134.44555 V 208.101 H 0 v 2.02985 z M 270.92921,128.7818 v -1.01699 -1.01492 H 0 v 1.01492 1.01699 z m 0,-32.969558 V 93.780324 H 185.1484 V 56.279772 H 0 v 2.04019 h 183.11648 v 37.49228 z m 0,-35.4459 v -2.04019 H 224.46796 L 184.57789,13.710792 H 0 v 2.03812 h 183.69526 l 39.89007,44.61743 z");
+  }
+
+  &.chipset {
+    clip-path: path("m 29.548584,27.437602 c -0.564742,8.48e-4 -1.022345,0.458451 -1.023193,1.023193 V 233.38679 c -2.92e-4,0.56555 0.457644,1.02441 1.023193,1.02526 H 241.38475 c 0.56555,-8.5e-4 1.02348,-0.45971 1.02319,-1.02526 V 52.172009 c 3.6e-4,-0.271536 -0.10707,-0.532114 -0.29869,-0.724503 L 218.39856,27.736292 c -0.19239,-0.191623 -0.45297,-0.299051 -0.72451,-0.29869 z M 47.382953,45.741501 H 204.14443 L 223.5509,65.147535 V 216.1066 H 47.382953 Z m 16.578887,9.211402 c -5.028839,0 -9.077482,4.048644 -9.077482,9.077483 0,5.028839 4.048643,9.076965 9.077482,9.076965 5.028839,0 9.077482,-4.048126 9.077482,-9.076965 0,-5.028839 -4.048643,-9.077483 -9.077482,-9.077483 z m 77.55459,12.78043 v 39.923147 l -13.68857,13.69012 h -20.74189 l 9.80354,-9.79475 V 95.963652 Z m 0,0 -25.06514,11.345044 -14.97376,26.323463 H 85.873311 L 101.47753,121.3466 H 79.137805 l 20.553268,20.55378 v 20.55327 h 20.555337 v 15.1629 h 15.1629 l 14.61099,14.61099 h 10.31358 l -4.14083,-10.53217 12.0897,-7.58455 -4.58783,-18.23145 1.31826,-5.55831 -28.20706,-23.54895 29.85813,16.58503 13.85496,7.69566 -12.26075,-24.14943 h 9.63714 l 0.1018,-9.73946 6.25285,-23.334495 V 74.873466 l -9.65987,34.427354 -12.0463,12.04578 v -17.28784 l 6.0756,-17.987011 15.63057,-11.198283 h -16.08687 l -13.04313,7.532874 v 39.39036 z m 18.81745,124.494207 h 12.50518 l -4.55631,-18.11517 -0.002,15.23214 z m -32.50602,-41.60883 h 19.70732 v 11.83494 z");
+  }
+
+  &.guara {
+    clip-path: path("M 194.30338,2.9639111e-6 V 28.409639 l -9.74101,9.742041 h -14.76034 l 6.97632,-6.9696 V 20.088701 Z m 0,0 L 176.46674,8.0734127 165.81106,26.805089 h -11.10371 l 11.10371,11.346591 h -15.8967 l 14.62598,14.625981 v 14.625981 h 14.62701 v 10.790042 h 3.38222 7.40782 l 10.3973,10.396778 h 7.33908 l -2.94659,-7.494633 8.60258,-5.397085 -3.2644,-12.97337 0.93844,-3.955311 -20.07267,-16.757637 21.24728,11.801864 9.85883,5.476154 -8.72453,-17.184481 h 6.85797 l 0.0724,-6.930844 4.44934,-16.604672 V 5.0813476 L 217.8389,29.579593 209.2663,38.15168 V 25.849591 l 4.32377,-12.799738 11.12231,-7.9685054 h -11.44736 l -9.28108,5.3603974 V 38.472076 Z M 207.69377,88.590462 h 8.89869 l -3.2427,-12.890686 -0.002,10.839134 z m -25.1442,-10.396778 -14.70556,15.797999 -9.65936,-6.054927 1.15807,23.059064 37.81061,21.83019 19.71766,19.71766 v 17.07544 l 5.42861,-0.93069 4.58577,-9.30745 -2.17248,-12.04474 -18.43815,-21.64881 -26.25059,-20.93412 z m -24.36492,9.743072 8.64495,1.381311 9.79889,-9.981817 2.53886,-11.932608 -17.50539,2.88148 2.87838,-17.507461 -19.53576,-14.625981 7.63158,-4.259687 -13.05037,-3.190502 -18.57406,4.708756 -14.06891,-0.1168 -32.079177,7.796421 -11.830282,22.853903 24.445533,34.165879 4.688085,21.18216 -4.417301,13.25553 -4.388361,0.0434 27.888733,39.31646 h 17.36122 l -1.46606,-5.47253 -7.84655,-4.52996 -3.71864,0.99632 -17.607712,-26.73532 13.797612,-34.50693 -5.71542,-31.053926 6.37171,8.689911 23.33087,3.242698 -9.80095,33.451187 v 4.78162 l -16.15095,27.97504 5.21002,9.02374 19.38382,-33.57366 z M 63.033361,65.943783 48.385673,98.199178 24.338564,125.51689 22.89576,122.93979 -1.5817514e-6,156.28556 1.3285987,174.5108 l 4.6596651,-0.60358 2.9672606,-3.4153 1.6789686,-7.89047 -2.6659888,-5.90713 26.6820898,-29.5057 36.840129,-28.457689 3.889168,-11.401888 z M 74.863643,43.08988 55.951619,50.333369 37.690203,69.322389 27.687197,84.977247 21.614183,108.38099 43.466596,96.410143 Z M 184.56237,58.981419 h 14.02395 v 8.422223 z")
+  }
+}
+
+button {
+  @apply font-black shadow-md rounded-sm transition-all duration-300;
+
+  svg {
+    @apply h-5 w-5;
+  }
+
+  &.only-icon {
+    @apply p-3 hover:scale-105 hover:bg-primary shadow-none hover:shadow-md hover:text-lightcolor;
+  }
+
+  &.primary,
+  &.secondary {
+    @apply flex flex-row items-center justify-center gap-2 rounded-sm py-2.5 px-4 hover:gap-3;
+
+    svg {
+      @apply translate-x-1;
+    }
+  }
+
+  &.primary {
+    @apply bg-gradient-to-r from-primary via-secondary to-tertiary text-lightcolor hover:shadow-lg hover:shadow-primary/40;
+    background-size: 200% 100%;
+    background-position: 50%;
+
+    &:hover {
+      background-position: 100%;
+    }
+  }
+
+  &.secondary {
+    @apply bg-surface hover:bg-surface/50;
+  }
+
+  &.context {
+    @apply py-2 px-4 shadow-none rounded-none hover:bg-foreground/10 flex flex-row gap-4 items-center;
+
+  }
+
+  
+
+  &.active {
+    background-color: rgb(var(--primary)) !important;
+    @apply text-lightcolor shadow-lg shadow-primary/30;
+  }
+
+  &:active {
+    scale: 95% !important;
+  }
+
+  &.danger {
+    background-color: (rgb(var(--error))) !important;
+    background-image: none !important;
+    &.primary {
+      @apply hover:shadow-error/50;
+    }
+    &.active {
+      background-color: rgb(var(--error)) !important;
+      @apply text-lightcolor shadow-lg shadow-error/30;
+    }
+    
+  }
+
+}
+
+.animate-wires-l {
+  background-image: linear-gradient(90deg, transparent, transparent, rgb(var(--primary)), rgb(var(--secondary)));
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  animation: animateWiresL 2s ease-in-out infinite forwards;
+}
+
+@keyframes animateWiresL {
+  0% {
+    background-position: 0%;
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    background-position: 200%;
+  }
+}
+
+.animate-wires-r {
+  background-image: linear-gradient(90deg, rgb(var(--primary)), rgb(var(--secondary)), transparent, transparent);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: 200%;
+  animation: animateWiresR 2s ease-in-out infinite forwards;
+}
+
+@keyframes animateWiresR {
+  0% {
+    background-position: 100%;
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    background-position: -100%;
+  }
+}
+
+.animate-logo-wire {
+  background-image: linear-gradient(to bottom, rgb(var(--secondary)), rgb(var(--primary)), rgb(var(--tertiary)), rgb(var(--secondary)));
+  background-size: 100% 300%;
+  background-position-y: 300%;
+  animation: animateLogoWire 10s linear infinite forwards;
+}
+
+@keyframes animateLogoWire {
+  from {
+    background-position-y: 300%;
+  }
+
+  to {
+    background-position-y: 0%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondary;
+}

@@ -1,0 +1,100 @@
+{
+    "Common": {
+        "indev":"Em desenvolvimento",
+        "auth": {
+            "signin": "Entrar",
+            "signup": "Cadastre-se",
+            "signout":"Sair da conta"
+        },
+        "learn": {
+            "more": "Saiba mais",
+            "about_us": "Sobre nós",
+            "docs": "Documentação",
+            "ads": "Para anunciantes"
+        },
+        "legal": {
+            "cookies": "Uso de Cookies",
+            "tos": "Termos de serviço",
+            "privacy": "Políticas de privacidade",
+            "conduct": "Código de conduta"
+        },
+        "settings": {
+            "lang": {
+                "_": "Idiomas",
+                "pt-br": "Português - BR",
+                "en-us": "English - US"
+            }
+        }
+    },
+    "Commands": {
+        "back_home":"Voltar ao inicio",
+        "try_again":"Tentar novamente",
+        "contact_dev":"Contatar desenvolvedor"
+    },
+    "HomePage": {
+        "inviteme": "Me Convide! ",
+        "slogan": "O seu parceiro para todas as suas conversas!",
+        "join": "Entre agora!"
+    },
+    "DashboardHome": {
+        "welcome": "Bem-vindo ao Painel de Configurações do Cookiebot!",
+        "inviteMeText": "Quer me adicionar a um grupo? Selecione “+ Me Convide!” Ou se deseja mexer em alguma configuração, vá em frente e a selecione! Qualquer dúvida, entre em contato com @MekhyW",
+        "inviteMeButton": "Me convide!",
+        "generalconfig": "Configurações Gerais",
+        "moderationconfig": "Ferramentas de Moderação",
+        "postsconfig": "Posts e Publicações",
+        "mailconfig": "Mural de Publicações",
+        "events": "Quadro de Eventos",
+        "testgroup": "Grupo de testes e assistência",
+        "updateschannel": "Canal de atualizações"
+    },
+    "DashboardGeneral": {
+        "back": "Voltar",
+        "general": "Configurações Gerais",
+        "welcome": "Mensagem de Boas-Vindas",
+        "welcomeLabel": "Digite aqui a mesnagem que aparecerá quando alguém entrar no grupo.",
+        "chatRules": "Regras do Chat",
+        "chatRulesLabel": "Digite aqui as regras do chat que aparecem ao digitar o comando /regras",
+        "checkOptions1": "Evitar comandos conflitantes com outros bots",
+        "checkOptions2": "Bloquear conteúdo NSFW",
+        "checkOptions3": "Funções de entretenimento (memes, IA, etc.)",
+        "checkOptions4": "Funções de Utilidade (como busca de imagens)",
+        "redefine": "Redefinir para o padrão"
+    },
+    "DashboardModeration": {
+        "back": "Voltar",
+        "title": "Moderação",
+        "captchaTitle": "Tempo de Resolução de Captcha",
+        "captchaSubtitle": "Defina o tempo em segundos para o Captcha para Entrar no Grupo",
+        "stickerTitle": "Limitador de Spam de Stickers",
+        "stickerSubtitle": "Defina a quantidade de stickers enviados para acionar aviso de spam",
+        "timeoutTitle": "Tempo de Espera em Imagens",
+        "timeoutSubtitle": "Defina o tempo em minutos sem enviar imagens quando alguém entra no grupo",
+        "redefine": "Redefinir para o padrão"
+    },
+    "DashboardPosts": {
+        "back": "Voltar",
+        "title": "Posts e Publicações",
+        "sliderTitle": "Limitador de Quantidade de Posts",
+        "sliderSubtitle": "Defina a quantidade máxima de posts enviados pelo Cookiebot diariamente para o seu grupo",
+        "content": "Permitir enviar posts deste grupo para outros",
+        "receive": "Permitir receber posts de outros grupos",
+        "redefine": "Redefinir para o padrão"
+    },
+    "DashboardEventsPage": {
+        "back": "Voltar",
+        "indev": "Em desenvolvimento!"
+    },
+    "Footer": {
+        "rights": {
+            "text": "© COOKIEBOT - Development team - MekhyW, Dangerousplay, Dumb Moss, DuqueDuk, Strawberry, Mygui63",
+            "bottomtext": "Frontend made by Kenji The Fox & Sam Mahonri - © NEXTFUR FOUNDATION"
+        }
+    },
+    "HTTPCodes": {
+        "404":"Oops, esta página não existe! Verifique a URL e tente novamente.",
+        "429":"Oops, limitamos o seu acesso à aplicação, tente novamente mais tarde.",
+        "403":"Você não tem permissão para acessar essa página",
+        "500":"Oops, ocorreu um erro bizonho, tente novamente ou contate o desenvolvedor se persistir."
+    }
+}
