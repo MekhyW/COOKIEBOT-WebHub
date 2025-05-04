@@ -17,8 +17,8 @@ export default function DashboardGeneral() {
                     <a href='/dashboard' className='text-white'>⬅️ {t('back')}</a>
                 </div>
             </div>
-            <div className="relative text-center">
-            <a className="text-white font-bold">General Settings</a>
+            <a className="flex text-white font-bold items-center justify-center text-center">General Settings</a>
+            <div className="relative text-left">
                 <div className="space-y-4">
                     <div className="mt-5">
                         <div className="w-fit bg-orange-100 rounded-md">

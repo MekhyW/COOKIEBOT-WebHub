@@ -69,9 +69,9 @@
         "captchaTitle": "Tempo de Resolução de Captcha",
         "captchaSubtitle": "Defina o tempo em segundos para o Captcha para Entrar no Grupo",
         "stickerTitle": "Limitador de Spam de Stickers",
-        "stickerSubtitle": "Defina a quantidade de stickers enviados para acionar aviso de spam",
-        "timeoutTitle": "Tempo de Espera em Imagens",
-        "timeoutSubtitle": "Defina o tempo em minutos sem enviar imagens quando alguém entra no grupo",
+        "stickerSubtitle": "Defina a quantidade de stickers enviados para acionar aviso/remoção de spam",
+        "timeoutTitle": "Tempo de Espera de Mídias",
+        "timeoutSubtitle": "Defina o tempo em minutos sem enviar mídias quando alguém entra no grupo",
         "redefine": "Redefinir para o padrão"
     },
     "DashboardPosts": {
@@ -89,8 +89,8 @@
     },
     "Footer": {
         "rights": {
-            "text": "© COOKIEBOT - Development team - MekhyW, Dangerousplay, Dumb Moss, DuqueDuk, Strawberry, Mygui63",
-            "bottomtext": "Frontend made by Kenji The Fox & Sam Mahonri - © NEXTFUR FOUNDATION"
+            "text": "© COOKIEBOT - Equipe de desenvolvimento - Mekhy, Dangerousplay, DuqueDuk, Strawberry, Mygui63",
+            "bottomtext": "Frontend feito por Mekhy, Kenji The Fox & Sam Mahonri - © NEXTFUR FOUNDATION"
         }
     },
     "HTTPCodes": {

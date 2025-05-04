@@ -45,7 +45,7 @@
         "generalconfig": "General Settings",
         "moderationconfig": "Moderation Tools",
         "postsconfig": "Posts and Publications",
-        "mailconfig": "Mailboard",
+        "mailconfig": "Posts Board",
         "events": "Events Board",
         "testgroup": "Test group and assistance",
         "updateschannel": "Updates channel"
@@ -69,9 +69,9 @@
         "captchaTitle": "Captcha Resolution Time",
         "captchaSubtitle": "Set the time in seconds for the Captcha to Enter the Group",
         "stickerTitle": "Sticker Spam Limiter",
-        "stickerSubtitle": "Set the number of stickers sent to trigger spam warning",
-        "timeoutTitle": "Image Wait Time",
-        "timeoutSubtitle": "Set the time in minutes without sending images when someone joins the group",
+        "stickerSubtitle": "Set the number of stickers sent to trigger spam warning/deletion",
+        "timeoutTitle": "Media Wait Time",
+        "timeoutSubtitle": "Set the time in minutes without sending media when someone joins the group",
         "redefine": "Reset to default"
     },
     "DashboardPosts": {
@@ -89,8 +89,8 @@
     },
     "Footer": {
         "rights": {
-            "text": "© COOKIEBOT - Development team - MekhyW, Dangerousplay, Dumb Moss, DuqueDuk, Strawberry, Mygui63",
-            "bottomtext": "Frontend made by Kenji The Fox & Sam Mahonri - © NEXTFUR FOUNDATION"
+            "text": "© COOKIEBOT - Development team - Mekhy, Dangerousplay, DuqueDuk, Strawberry, Mygui63",
+            "bottomtext": "Frontend made by Mekhy, Kenji The Fox & Sam Mahonri - © NEXTFUR FOUNDATION"
         }
     },
     "HTTPCodes": {

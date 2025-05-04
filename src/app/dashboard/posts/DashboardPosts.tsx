@@ -33,7 +33,7 @@ export default function DashboardPosts() {
                         />
                         <p className="text-xs text-black mt-1">{t('sliderSubtitle')} </p>
                     </div>
-                    <div className='mt-6 space-y-4'>
+                    <div className='mt-6 space-y-4 text-left'>
                             <div className="w-full bg-white text-amber-800 py-2 rounded-sm flex items-center justify-between px-4">
                                 <label className='text-sm font-medium text-black'>
                                     {t('content')}
