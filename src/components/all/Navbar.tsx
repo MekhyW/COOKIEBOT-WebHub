@@ -6,9 +6,11 @@ import Link from 'next/link';
 import { DropdownLangSelector } from '../ui/menus/Languages';
 import { backOut, motion } from 'framer-motion';
 import UserMenu from '../ui/menus/User';
+import { usePathname } from 'next/navigation';
 
 function Navbar() {
     const [isTop, setIsTop] = useState(true);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -43,11 +45,13 @@ function Navbar() {
                         </Link>
                     </div>
                     <span className='flex flex-grow'></span>
-                    <nav className='flex sm:flex-row flex-col sm:text-base text-sm'>
-                        <a href="/privacy" className="text-zinc-600 hover:text-yellow-500 font-bold mr-4">Privacy</a>
-                        <a href="https://t.me/cookiebotupdates" className="text-zinc-600 hover:text-yellow-500 font-bold mr-4">Development</a>
-                        <a href="https://github.com/MekhyW/COOKIEBOT-Telegram-Group-Bot" className="text-zinc-600 hover:text-yellow-500 font-bold">Github</a>
-                    </nav>
+                    {pathname === '/' && (
+                        <nav className='flex sm:flex-row flex-col sm:text-base text-sm'>
+                            <a href="/privacy" className="text-zinc-600 hover:text-yellow-500 font-bold mr-4">Privacy</a>
+                            <a href="https://t.me/cookiebotupdates" className="text-zinc-600 hover:text-yellow-500 font-bold mr-4">Development</a>
+                            <a href="https://github.com/MekhyW/COOKIEBOT-Telegram-Group-Bot" className="text-zinc-600 hover:text-yellow-500 font-bold">GitHub</a>
+                        </nav>
+                    )}
                     <span className='flex flex-grow'></span>
                     <div className="sm:hidden">
                         <UserMenu type="only-icon"/>

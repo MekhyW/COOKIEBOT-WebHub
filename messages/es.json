@@ -1,0 +1,101 @@
+{
+    "Common": {
+        "indev":"En desarrollo",
+        "auth": {
+            "signin": "Iniciar sesión",
+            "signup": "Registrarse",
+            "signout": "Cerrar sesión"
+        },
+        "learn": {
+            "more": "Más información",
+            "about_us": "Sobre nosotros",
+            "docs": "Documentación",
+            "ads": "Para anunciantes"
+        },
+        "legal": {
+            "cookies": "Uso de cookies",
+            "tos": "Condiciones de servicio",
+            "privacy": "Políticas de privacidad",
+            "conduct": "Código de conducta"
+        },
+        "settings": {
+            "lang": {
+                "_": "Idiomas",
+                "pt-br": "Português - BR",
+                "en-us": "English - US",
+                "es-es": "Español - ES"
+            }
+        }
+    },
+    "Commands": {
+        "back_home": "Volver a la página principal",
+        "try_again": "Inténtalo de nuevo",
+        "contact_dev": "Contactar con el desarrollador"
+    },
+    "HomePage": {
+        "inviteme": "¡Invítame!",
+        "slogan": "¡El bot más ingenioso de Telegram!",
+        "join": "¡Únete ahora!"
+    },
+    "DashboardHome": {
+        "welcome": "¡Bienvenido al panel de configuración de Cookiebot!",
+        "inviteMeText": "¿Quieres añadirme a un grupo? Selecciona “+ Invitarme“. O si quieres modificar una configuración, ¡síguela! Si tienes alguna pregunta, contacta con @MekhyW",
+        "inviteMeButton": "¡Invítame!",
+        "generalconfig": "Configuración general",
+        "moderationconfig": "Herramientas de moderación",
+        "postsconfig": "Publicaciones",
+        "mailconfig": "Muro de publicaciones",
+        "events": "Tablón de eventos",
+        "testgroup": "Grupo de pruebas y soporte",
+        "updateschannel": "Canal de actualizaciones"
+    },
+    "DashboardGeneral": {
+        "back": "Atrás",
+        "general": "Configuración general",
+        "welcome": "Mensaje de bienvenida",
+        "welcomeLabel": "Introduce aquí el mensaje que aparecerá cuando alguien se una al grupo.",
+        "chatRules": "Reglas del chat",
+        "chatRulesLabel": "Introduce aquí las reglas del chat que aparecen al escribir el comando /rules",
+        "checkOptions1": "Evitar comandos conflictivos con otros bots",
+        "checkOptions2": "Bloquear contenido no apto para el trabajo",
+        "checkOptions3": "Funciones de entretenimiento (memes, IA, etc.)",
+        "checkOptions4": "Funciones de utilidad (como la búsqueda de imágenes)",
+        "redefine": "Restablecer valores predeterminados"
+    },
+    "DashboardModeration": {
+        "back": "Atrás",
+        "title": "Moderación",
+        "captchaTitle": "Tiempo para resolver el captcha",
+        "captchaSubtitle": "Establecer el tiempo en segundos para que el captcha se una al grupo",
+        "stickerTitle": "Limitador de spam de stickers",
+        "stickerSubtitle": "Establecer la cantidad de stickers enviados para activar la alerta de spam",
+        "timeoutTitle": "Tiempo de espera de imagen",
+        "timeoutSubtitle": "Establecer el tiempo en minutos sin enviar imágenes cuando alguien se une al grupo",
+        "redefine": "Restablecer valores predeterminados"
+    },
+    "DashboardPosts": {
+        "back": "Atrás",
+        "title": "Publicaciones",
+        "sliderTitle": "Limitador de cantidad de publicaciones",
+        "sliderSubtitle": "Establece el número máximo de publicaciones que Cookiebot puede enviar al día a tu grupo",
+        "content": "Permitir enviar publicaciones de este grupo a otros",
+        "receive": "Permitir recibir publicaciones de otros grupos",
+        "redefine": "Restablecer valores predeterminados"
+    },
+    "DashboardEventsPage": {
+        "back": "Atrás",
+        "indev": "¡En desarrollo!"
+    },
+    "Footer": {
+        "rights": {
+            "text": "© COOKIEBOT - Development team - MekhyW, Dangerousplay, Dumb Moss, DuqueDuk, Strawberry, Mygui63",
+            "bottomtext": "Frontend made by Kenji The Fox & Sam Mahonri - © NEXTFUR FOUNDATION"
+        }
+    },
+    "HTTPCodes": {
+        "404": "¡Uy, esta página no existe! Revisa la URL y vuelve a intentarlo.",
+        "429": "¡Uy, hemos limitado tu acceso a la aplicación! Vuelve a intentarlo más tarde.",
+        "403": "No tienes permiso para acceder a esta página.",
+        "500": "¡Uy, se ha producido un error extraño! Vuelve a intentarlo o contacta con el desarrollador si persiste."
+    }
+}

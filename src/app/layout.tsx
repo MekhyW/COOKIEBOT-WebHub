@@ -13,8 +13,8 @@ import { BackgroundImage } from "@/components/ui/MovingBackground";
 export const metadata: Metadata = {
   metadataBase: new URL('https://cookiebotfur.net'),
   title: {
-    default: "Cookiebot!",
-    template: "%s | Cookiebot!"
+    default: "Cookiebot",
+    template: "%s | Cookiebot"
   },
   openGraph: {
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     }
     ]
   },
-  description: "O seu parceiro para todas as suas conversas!",
+  description: "O bot mais crocante do Telegram!",
 };
 
 export default async function RootLayout({

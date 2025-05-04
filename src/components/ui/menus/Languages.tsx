@@ -37,5 +37,9 @@ export function DropdownLangSelector({ type = "only-icon" }: { type?: "only-icon
             <LanguageIcon />
             {t("en-us")}
         </DropdownButton>
+        <DropdownButton callback={async () => { if (l !== "es") onChange("es") }} active={l === "es"}>
+            <LanguageIcon />
+            {t("es-es")}
+        </DropdownButton>
     </SimpleDropdown>
 }

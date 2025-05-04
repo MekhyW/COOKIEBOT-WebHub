@@ -22,7 +22,8 @@
             "lang": {
                 "_": "Languages",
                 "pt-br": "Português - BR",
-                "en-us": "English - US"
+                "en-us": "English - US",
+                "es-es": "Español - ES"
             }
         }
     },
@@ -33,7 +34,7 @@
     },
     "HomePage": {
         "inviteme": "Invite Me! ",
-        "slogan": "Your partner for all your conversations!",
+        "slogan": "The crispiest bot on Telegram!",
         "join": "Join now!"
     },
     "DashboardHome": {
