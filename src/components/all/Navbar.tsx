@@ -41,7 +41,7 @@ function Navbar() {
                 <div className="absolute top-0 flex flex-row items-center h-full px-6 py-2 pr-4 w-full gap-2">
                     <div className=''>
                         <Link href={"/"} prefetch={false}>
-                            <span className=' block h-full'> <img src="/cookiebot_avatar.jpeg" className="h-12 w-12 rounded-sm"></img> </span>
+                            <span className=' block h-full'> <img src="/home.png" className="h-12 w-12 rounded-sm"></img> </span>
                         </Link>
                     </div>
                     <span className='flex flex-grow'></span>

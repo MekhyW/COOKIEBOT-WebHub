@@ -39,7 +39,8 @@
     },
     "DashboardHome": {
         "welcome": "Welcome to the Cookiebot Settings Panel!",
-        "inviteMeText": "Want to add me to a group? Select “+ Invite Me!” Or if you want to tweak a setting, go ahead and select it! If you have any questions, contact @MekhyW",
+        "groupcount": "I am currently in {count} groups!",
+        "inviteMeText": "Want to add me to a group? Select “Invite Me!” Or if you want to tweak a setting, go ahead and select it! If you have any questions, contact @MekhyW",
         "inviteMeButton": "Invite me!",
         "generalconfig": "General Settings",
         "moderationconfig": "Moderation Tools",

@@ -15,7 +15,7 @@ export default function Splash() {
                 animate={{ scale: 0.5 }}
                 transition={{ ease: 'easeInOut', duration: 0.5 }}>
                 <span className=" h-20 text-foreground -translate-x-1 -translate-y-4">
-                    <img className="h-10 w-10 rounded-md" src="./cookiebot_avatar.jpeg"></img>
+                    <img className="h-10 w-10 rounded-md" src="/cookiebot_avatar.jpeg"></img>
                 </span>
 
                 <Spinner className="border-transparent border-b-foreground" />

@@ -9,6 +9,7 @@ import { Footer } from "@/components/all/Footer";
 import Splash from "@/components/all/Splash";
 import { ReactNode } from "react";
 import { BackgroundImage } from "@/components/ui/MovingBackground";
+import QueryProvider from '../providers/QueryProvider';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cookiebotfur.net'),
@@ -39,17 +40,19 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${fonts.map(font => font.variable).join(' ')} dark`} suppressHydrationWarning={true}>
       <body>
-        <Splash />
-        <div className="fixed top-0 left-0 w-full h-full -z-10"></div>
-        <BackgroundImage>
-          <NextIntlClientProvider messages={messages}>
-            <NextThemeProvider>
-              <Navbar/>
-              {children}
-              <Footer/>
-            </NextThemeProvider>
-          </NextIntlClientProvider>
-        </BackgroundImage>
+        <QueryProvider>
+          <Splash />
+          <div className="fixed top-0 left-0 w-full h-full -z-10"></div>
+          <BackgroundImage>
+            <NextIntlClientProvider messages={messages}>
+              <NextThemeProvider>
+                <Navbar/>
+                {children}
+                <Footer/>
+              </NextThemeProvider>
+            </NextIntlClientProvider>
+          </BackgroundImage>
+        </QueryProvider>
       </body>
     </html>
   );

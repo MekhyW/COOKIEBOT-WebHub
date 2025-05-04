@@ -1,12 +1,12 @@
+'use client';
+
 import { useTranslations } from "next-intl"; 
 import { MailIcon, CogIcon, ShieldIcon, SpeakerphoneIcon, TextIcon, CalendarIcon, AcademicIcon } from "../../components/icons/Icons";
-
-//import { useGetChatCount } from '../../lib/hooks/useGetChatCount';
+import { useGetChatCount } from '../../lib/hooks/useGetChatCount';
 
 export default function DashboardHome() {
     const t = useTranslations("DashboardHome")
-    //const { data: chatCount, isLoading, isError } = useGetChatCount();
-    //<h2 className="text-black text-sm">{t('inviteMeText2')} { isLoading ? '...' : isError ? 'N/A' : chatCount?.number_chats || 0 }</h2>
+    const { data: chatCount, isLoading, isError } = useGetChatCount();
 
     return (
         <main className="min-h-screen flex items-center justify-center">
@@ -18,6 +18,11 @@ export default function DashboardHome() {
                     <h1 className="text-xl font-bold mt-4 text-black">{t('welcome')}</h1>
                     <h3 className="text-black">
                         
+                    </h3>
+                    <h3 className="text-black text-sm">
+                        {t('groupcount', {
+                            count: isLoading ? '...' : isError ? 'N/A' : chatCount?.number_chats.toString() || '0'
+                        })}
                     </h3>
                     <h3 className="text-black text-sm">{t('inviteMeText')}</h3>
 
