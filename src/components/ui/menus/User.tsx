@@ -5,6 +5,7 @@ import { ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/solid";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import TelegramLoginButton from "@/components/ui/TelegramLoginButton"
 
 export default function UserMenu({ type = "only-icon" }: { type?: "only-icon" | "secondary" }) {
     const t = useTranslations("Common.auth");
@@ -20,12 +21,7 @@ export default function UserMenu({ type = "only-icon" }: { type?: "only-icon" | 
     return (
         <>
             {user ? null : (
-                <a href="/dashboard">
-                    <button className="primary">
-                        {type !== "only-icon" ? t("signin") : ""}
-                        <ArrowRightEndOnRectangleIcon />
-                    </button>
-                </a>
+                <TelegramLoginButton/>
             )}
         </>
     );
