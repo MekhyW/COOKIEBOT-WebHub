@@ -9,10 +9,10 @@ requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
 language = "nodejs"
 
 [deployment]
-run = ["sh", "-c", "npm start"]
+run = ["sh", "-c", "next start -p 3000"]
 deploymentTarget = "cloudrun"
 ignorePorts = false
-build = ["sh", "-c", "npm run build"]
+build = ["sh", "-c", "next build"]
 
 [[ports]]
 localPort = 3000
